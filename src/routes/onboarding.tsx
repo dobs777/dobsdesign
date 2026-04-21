@@ -250,8 +250,8 @@ function OnboardingPage() {
     try {
       const summary = ALL_FIELDS.map((f) => {
         const v = values[f.id]?.trim();
-        return v ? `${f.label}:\n${v}\n` : null;
-      }).filter(Boolean).join("\n");
+        return v ? `<strong style="color:#e8b86d;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">${f.label}</strong><br>${v}<br><br>` : null;
+      }).filter(Boolean).join("");
       // Envio usando o template exclusivo do onboarding
       await emailjs.send(
         EMAILJS_SERVICE_ID,
