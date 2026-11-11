@@ -29,11 +29,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DobsDesign" },
-      { name: "description", content: "Modern Website Design Studio" },
+      { title: "DobsDesign | Shorts editing for YouTubers" },
+      { name: "description", content: "Your long videos, cut into shorts people watch to the end. 5 shorts for $75." },
       { name: "author", content: "DobsDesign" },
-      { property: "og:title", content: "DobsDesign" },
-      { property: "og:description", content: "Modern Website Design Studio" },
+      { property: "og:title", content: "DobsDesign | Shorts editing for YouTubers" },
+      { property: "og:description", content: "Your long videos, cut into shorts people watch to the end. 5 shorts for $75." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@dobsdesign" },
@@ -41,7 +41,7 @@ export const Route = createRootRoute({
     links: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Barlow+Condensed:wght@700&display=swap",
       },
       {
         rel: "stylesheet",
