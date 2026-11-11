@@ -207,6 +207,7 @@ function Index() {
           <a href="#styles">Styles</a>
           <a href="#process">Process</a>
           <a href="#price">Price</a>
+          <a href="/websites">Websites</a>
           <a href="#start" className="btn btn-small">
             Start the test
           </a>

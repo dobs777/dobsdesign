@@ -313,6 +313,34 @@
   color: var(--soft); font-size: 15px; border-top: 1px solid var(--line);
 }
 
+/* websites page: sample local-business site inside the phone */
+.ws-mock {
+  position: relative; width: 100%; height: 100%; border-radius: 26px; overflow: hidden;
+  background: #faf8f5; color: #1a1a1a; font-size: 12px; line-height: 1.35; display: flex; flex-direction: column;
+}
+.ws-hero {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 18px 16px 18px;
+  min-height: 52%; color: #fff;
+  background: linear-gradient(transparent 10%, rgb(0 0 0 / 0.55)), var(--biz);
+  transition: background-color 0.25s ease;
+}
+.ws-badge { align-self: flex-start; background: rgb(255 255 255 / 0.16); border-radius: 99px; padding: 4px 10px; font-size: 11px; }
+.ws-badge b { color: #ffd54a; }
+.ws-name { font-family: Georgia, serif; font-size: 25px; line-height: 1.05; }
+.ws-line { opacity: 0.9; }
+.ws-cta, .ws-sticky {
+  align-self: flex-start; background: #fff; color: #1a1a1a; font-weight: 700; border-radius: 8px; padding: 8px 12px;
+}
+.ws-body { display: flex; flex-direction: column; gap: 8px; padding: 14px 14px 60px; }
+.ws-h { font-family: Georgia, serif; font-weight: 700; font-size: 15px; margin-top: 4px; }
+.ws-quote { background: #fff; border-radius: 8px; padding: 9px 10px; box-shadow: 0 1px 2px rgb(0 0 0 / 0.08); }
+.ws-quote i { display: block; font-style: normal; color: #e3a008; letter-spacing: 1px; font-size: 10px; }
+.ws-map { height: 54px; border-radius: 8px; background: repeating-linear-gradient(45deg, #e6e2db 0 8px, #efebe5 8px 16px); }
+.ws-sticky {
+  position: absolute; left: 12px; right: 12px; bottom: 12px; text-align: center;
+  background: var(--biz); color: #fff; box-shadow: 0 6px 16px rgb(0 0 0 / 0.25);
+}
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 40px; padding: 24px 0 64px; }
   .styles { grid-template-columns: 1fr; }
