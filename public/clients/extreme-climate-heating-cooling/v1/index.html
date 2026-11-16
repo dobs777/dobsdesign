@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en" data-mode="cool">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extreme Climate Heating &amp; Cooling · HVAC repair &amp; installation, Knoxville TN</title>
+<meta name="description" content="Family-owned heating and cooling in Knoxville, TN. AC, furnace, heat pump and mini-split repair and installation. Free estimates: (865) 556-4515.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+(function(){var m=new Date().getMonth();var d=document.documentElement;d.dataset.mode=(m>=9||m<=2)?'heat':'cool';
+if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('js')})();
+</script>
+<style>
+@property --acc{syntax:'<color>';inherits:true;initial-value:#1f6fb5}
+@property --acc-soft{syntax:'<color>';inherits:true;initial-value:#e6f0fa}
+:root{
+  --paper:#fbf8f3; --card:#fff; --ink:#1d2430; --muted:#5b6474; --rule:rgba(29,36,48,.12);
+  --blue:#1f6fb5; --blue-ink:#175893; --blue-soft:#e6f0fa;
+  --red:#d8262f; --red-ink:#b11d25; --red-soft:#fbe9e7;
+  --display:"Bricolage Grotesque","Arial Narrow",sans-serif;
+  --body:"Figtree",system-ui,sans-serif;
+  --wrap:min(1180px, 100% - 32px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --acc:var(--blue); --acc-soft:var(--blue-soft);
+}
+html[data-mode="heat"]{--acc:var(--red);--acc-soft:var(--red-soft)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scrollbar-color:#c9c2b6 var(--paper)}
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:#c9c2b6;border:3px solid var(--paper);border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+::selection{background:#ffd9a8;color:var(--ink)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.2em}
+.wrap{width:var(--wrap);margin-inline:auto}
+.tnum{font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.025em;margin:0;text-wrap:balance}
+h2{font-size:clamp(32px,4.6vw,54px)}
+h3{font-size:22px;letter-spacing:-.015em}
+p{margin:0}
+section{padding:clamp(64px,9vw,112px) 0}
+.lede{color:var(--muted);font-size:clamp(17px,1.6vw,19px);max-width:56ch;margin-top:16px}
+
+.preview{background:#1d2430;color:#c8cfdb;font-size:13px;text-align:center;padding:7px 16px;line-height:1.45}
+.preview a{color:#fff}
+.pill{position:fixed;right:12px;bottom:12px;z-index:60;pointer-events:none;opacity:.7;background:#1d2430;color:#fff;font:700 12px/1 var(--body);letter-spacing:.04em;padding:8px 12px;border-radius:999px}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(251,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:40px;height:40px;flex:none}
+.brand b{display:block;font:800 19px/1 var(--display);letter-spacing:-.02em}
+.brand small{display:block;font:600 12px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav.main{display:flex;gap:22px;margin-left:auto;font-weight:600;font-size:15px}
+nav.main a{text-decoration:none;padding:6px 0;background:linear-gradient(var(--blue),var(--blue)) 0 100%/0 2px no-repeat;transition:background-size .3s var(--ease)}
+nav.main a:hover{background-size:100% 2px}
+.hphone{font:800 18px/1 var(--body);text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:8px;white-space:nowrap}
+.hphone svg{width:18px;height:18px;color:var(--red)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 17px/1 var(--body);text-decoration:none;padding:16px 22px;border-radius:999px;border:2px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .2s var(--ease),background-color .2s,border-color .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-acc{background:var(--acc);color:#fff;box-shadow:0 10px 24px -12px var(--acc)}
+.btn-acc:hover{transform:translateY(-2px)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+
+/* HERO */
+.hero{position:relative;padding:clamp(36px,6vw,72px) 0 clamp(48px,7vw,88px);transition:--acc .4s var(--ease),--acc-soft .4s var(--ease);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% 40%;height:120%;background:radial-gradient(closest-side,var(--acc-soft),transparent);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:center}
+.switch{display:inline-grid;grid-template-columns:1fr 1fr;padding:4px;border-radius:999px;background:#fff;border:1px solid var(--rule);position:relative;margin-bottom:22px}
+.switch button{position:relative;z-index:1;font:700 15px/1 var(--body);border:0;background:none;padding:10px 18px;border-radius:999px;cursor:pointer;color:var(--muted);display:flex;justify-content:center;align-items:center;gap:7px;transition:color .3s}
+.switch button svg{width:16px;height:16px}
+.switch button[aria-pressed="true"]{color:#fff}
+.switch .knob{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:var(--acc);transition:transform .4s var(--ease)}
+html[data-mode="cool"] .switch .knob{transform:translateX(100%)}
+.hero h1{font-size:clamp(44px,7.4vw,92px);color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero .lede{color:#424b5a}
+.swap [data-for]{display:none}
+html[data-mode="cool"] .swap [data-for="cool"],html[data-mode="heat"] .swap [data-for="heat"]{display:block}
+html[data-mode="cool"] .swap .chips[data-for="cool"],html[data-mode="heat"] .swap .chips[data-for="heat"]{display:flex}
+.js .swap [data-for]{animation:swapIn .45s var(--ease) both}
+@keyframes swapIn{from{opacity:0;transform:translateY(10px)}}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none;padding:0}
+.chips a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;background:#fff;border:1px solid var(--rule);padding:8px 14px 8px 10px;border-radius:999px;transition:border-color .2s,transform .2s var(--ease)}
+.chips a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.chips a:hover{border-color:var(--acc);transform:translateY(-1px)}
+.free{margin-top:18px;font-size:15px;color:var(--muted)}
+.free b{color:var(--ink)}
+
+/* thermostat */
+.stat{justify-self:center;width:min(420px,84vw);position:relative}
+.stat svg{width:100%;height:auto;display:block;overflow:visible}
+.face{fill:#fff}
+.bezel{fill:none;stroke:#ece6dc;stroke-width:10}
+.tick{stroke:#cfc8bc;stroke-width:2;stroke-linecap:round}
+.tick.maj{stroke:#9d968a;stroke-width:3}
+.track{fill:none;stroke:#efe9df;stroke-width:12;stroke-linecap:round}
+.arc{fill:none;stroke:var(--acc);stroke-width:12;stroke-linecap:round;stroke-dasharray:556.06 742;transition:stroke-dashoffset .7s var(--ease)}
+.needle{transform-box:view-box;transform-origin:150px 150px;transition:transform .7s var(--ease)}
+.needle circle{fill:var(--acc);stroke:#fff;stroke-width:4}
+.read{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none}
+.read small{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.temp{font:800 clamp(84px,20vw,128px)/.9 var(--body);font-variant-numeric:tabular-nums;letter-spacing:-.04em;color:var(--ink);margin:8px 0 6px;display:flex;justify-content:center}
+.temp sup{font-size:.36em;margin-top:.18em;color:var(--acc)}
+.read .state{font:700 15px/1 var(--body);color:var(--acc);display:flex;align-items:center;justify-content:center;gap:7px}
+.read .state i{width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.js .read .state i{animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.scale{position:absolute;left:0;right:0;bottom:6%;display:flex;justify-content:space-between;padding:0 21%;font:600 13px/1 var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.shadow{position:absolute;inset:6%;border-radius:50%;box-shadow:0 40px 70px -30px rgba(60,48,30,.35),0 4px 14px rgba(60,48,30,.06);pointer-events:none}
+
+/* van */
+.van{padding:0 0 clamp(56px,8vw,96px)}
+.van figure{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#dfe7d8}
+.van img{width:100%;aspect-ratio:1400/667;object-fit:cover}
+.badge{position:absolute;left:clamp(12px,3vw,28px);bottom:clamp(12px,3vw,28px);background:#fff;border-radius:16px;padding:14px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 40px -18px rgba(29,36,48,.45);text-decoration:none}
+.badge strong{font:800 34px/1 var(--body);font-variant-numeric:tabular-nums}
+.badge .stars{color:#f4b400;font-size:15px;letter-spacing:2px;line-height:1}
+.badge span{display:block;font-size:14px;color:var(--muted);line-height:1.35}
+.vancap{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-weight:600;font-size:15px;color:var(--muted)}
+.vancap span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:9px;vertical-align:middle}
+.vancap span:nth-child(even)::before{background:var(--blue)}
+
+/* services */
+#services{background:#fff;border-block:1px solid var(--rule)}
+.svc-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:44px}
+.col{border-radius:22px;padding:clamp(22px,3vw,34px)}
+.col.cool{background:var(--blue-soft)}
+.col.heat{background:var(--red-soft)}
+.col h3{display:flex;align-items:center;gap:10px;font-size:28px}
+.col.cool h3{color:var(--blue-ink)}
+.col.heat h3{color:var(--red-ink)}
+.col h3 svg{width:26px;height:26px}
+.col ul{list-style:none;padding:0;margin:18px 0 0}
+.col li{padding:14px 0;border-top:1px solid rgba(29,36,48,.1);display:grid;grid-template-columns:1fr auto;gap:4px 16px}
+.col li b{font-size:18px}
+.col li span{grid-column:1/-1;color:#4a5262;font-size:15.5px}
+.both{margin-top:clamp(20px,3vw,40px);display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.both div{padding:22px 22px 0 0}
+.both div+div{padding-left:22px;border-left:1px solid var(--rule)}
+.both h3{font-size:21px}
+.both p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.facts span{background:var(--paper);border:1px solid var(--rule);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:600}
+.facts b{font-variant-numeric:tabular-nums}
+
+/* work strip */
+.work{display:flex;gap:16px;margin-top:40px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.work figure{margin:0;flex:none;scroll-snap-align:start}
+.work img{height:260px;width:auto;max-width:none;border-radius:16px;object-fit:cover}
+.work figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+
+/* equipment */
+.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:2px solid var(--ink)}
+.brand-item{padding:24px 20px 0 0}
+.brand-item+.brand-item{padding-left:20px;border-left:1px solid var(--rule)}
+.brand-item .ph{height:170px;display:grid;place-items:center;background:#fff;border-radius:16px;margin-bottom:16px;overflow:hidden}
+.brand-item .ph img{max-height:150px;width:auto;transition:transform .5s var(--ease)}
+.brand-item:hover .ph img{transform:scale(1.05)}
+.brand-item .ph.word{font:800 30px/1 var(--display);color:var(--red-ink);letter-spacing:-.02em}
+.brand-item p{color:var(--muted);font-size:15.5px;margin-top:6px}
+
+/* air */
+#air{background:#fff;border-block:1px solid var(--rule)}
+.air{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.air-list{list-style:none;padding:0;margin:26px 0 0;columns:2;column-gap:24px}
+.air-list li{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--rule);font-weight:600}
+.air-pics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.air-pics figure{margin:0;background:var(--paper);border-radius:18px;padding:16px;text-align:center}
+.air-pics img{margin:0 auto;max-height:170px;width:auto}
+.air-pics figcaption{font-size:14px;font-weight:600;margin-top:10px}
+
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(5,1fr);margin-top:40px;border-top:2px solid var(--ink)}
+.trust div{padding:20px 16px 0 0}
+.trust div+div{padding-left:16px;border-left:1px solid var(--rule)}
+.trust strong{display:block;font:800 26px/1.05 var(--display);letter-spacing:-.02em}
+.trust span{display:block;color:var(--muted);font-size:15px;margin-top:6px}
+
+/* reviews */
+.rev-top{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px}
+.score{display:flex;align-items:center;gap:14px}
+.score strong{font:800 64px/1 var(--body);font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.score .stars{color:#f4b400;font-size:20px;letter-spacing:3px}
+.score span{display:block;color:var(--muted);font-size:15px}
+.quotes{columns:2;column-gap:clamp(20px,3vw,36px);margin-top:40px}
+blockquote{break-inside:avoid;margin:0 0 clamp(20px,3vw,36px);background:#fff;border:1px solid var(--rule);border-radius:20px;padding:26px 26px 22px}
+blockquote p{font-size:clamp(18px,1.8vw,21px);line-height:1.45;font-weight:500}
+blockquote footer{margin-top:14px;font-size:14.5px;color:var(--muted);display:flex;align-items:center;gap:10px}
+blockquote footer::before{content:"";width:22px;height:2px;background:var(--red)}
+blockquote:nth-child(even) footer::before{background:var(--blue)}
+
+/* area */
+#area{background:#fff;border-top:1px solid var(--rule)}
+.area{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,56px);align-items:start}
+.hours{width:100%;border-collapse:collapse;margin-top:26px;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 0;border-bottom:1px solid var(--rule)}
+.hours td+td{text-align:right;font-weight:600}
+.addr{margin-top:22px;font-weight:600}
+.addr a{color:var(--blue-ink)}
+.map{border-radius:22px;overflow:hidden;border:1px solid var(--rule);background:var(--paper);aspect-ratio:4/3}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+/* final cta */
+.final{background:var(--blue);color:#fff;border-radius:28px;padding:clamp(32px,5vw,60px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:var(--red);opacity:.9}
+.final>*{position:relative;z-index:1}
+.final h2{color:#fff;max-width:16ch}
+.final p{opacity:.9;margin-top:10px}
+.final .btn-w{background:#fff;color:var(--ink)}
+.final .btn-w:hover{transform:translateY(-2px)}
+.final .btn-o{border-color:#fff;color:#fff}
+
+footer.site{padding:56px 0 110px;font-size:15px;color:var(--muted)}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer.site b{color:var(--ink)}
+
+/* mobile call bar */
+.callbar{display:none}
+
+/* reveal */
+.js .rise{transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .rise:not(.in){opacity:0;transform:translateY(18px)}
+
+@media (max-width:1000px){
+  nav.main{display:none}
+  .hphone{margin-left:auto}
+  .brands{grid-template-columns:1fr 1fr}
+  .brand-item:nth-child(3){padding-left:0;border-left:0}
+  .trust{grid-template-columns:1fr 1fr 1fr}
+  .trust div:nth-child(4){padding-left:0;border-left:0}
+}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:0}
+  .hero .wrap>div:first-child{display:contents}
+  .switch{order:1;justify-self:start;margin-bottom:8px}
+  .stat{order:2;width:min(250px,66vw);margin-bottom:10px}
+  .swap{order:3}.cta{order:4}.free{order:5}
+  .split,.air,.area{grid-template-columns:1fr}
+  .both{grid-template-columns:1fr}
+  .both div,.both div+div{padding:18px 0;border-left:0;border-bottom:1px solid var(--rule)}
+  .quotes{columns:1}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .hphone span{display:none}
+  .hphone{width:44px;height:44px;justify-content:center;border-radius:50%;background:var(--red-soft)}
+  .brand b{font-size:17px}
+  .cta .btn{flex:1 1 100%}
+  .brands{grid-template-columns:1fr}
+  .brand-item,.brand-item+.brand-item{padding:20px 0 0;border-left:0}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust div,.trust div+div{padding:18px 12px 0 0;border-left:0}
+  .air-list{columns:1}
+  .air-pics{gap:8px}
+  .air-pics figure{padding:10px}
+  .work img{height:210px}
+  .badge{padding:10px 12px;gap:10px}
+  .badge strong{font-size:26px}
+  .badge span{font-size:12.5px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,243,.96);backdrop-filter:blur(8px);border-top:1px solid var(--rule)}
+  .callbar a{flex:1;padding:14px 10px;font-size:16px}
+  .callbar .btn-line{flex:0 0 auto}
+  .pill{bottom:calc(84px + env(safe-area-inset-bottom));font-size:10px;padding:6px 9px;opacity:.6}
+  .temp{font-size:72px}
+  .read small{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<div class="preview">Preview made by Henrique · <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> · (719) 769-1280 · not the official Extreme Climate website yet</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Extreme Climate Heating &amp; Cooling, home">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M14 36c-6-2-9-7-8-13 1-5 5-8 6-13 3 3 4 6 3 10 2-1 3-3 3-5 4 4 5 9 4 13-1 4-4 7-8 8z" fill="#d8262f"/>
+        <g stroke="#1f6fb5" stroke-width="2.4" stroke-linecap="round" fill="none" transform="translate(28 14)">
+          <path d="M0-11V11M-9.5-5.5 9.5 5.5M-9.5 5.5 9.5-5.5"/>
+          <path d="M-3-8 0-5 3-8M-3 8 0 5 3 8M-8.4-1.4-5.4-2.6-6-6M8.4 1.4 5.4 2.6 6 6M-6 6-5.4 2.6-8.4 1.4M6-6 5.4-2.6 8.4-1.4"/>
+        </g>
+      </svg>
+      <span><b>Extreme Climate</b><small>Heating · Cooling · Plumbing</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a><a href="#equipment">Equipment</a><a href="#air">Air quality</a><a href="#reviews">Reviews</a><a href="#area">Hours &amp; area</a>
+    </nav>
+    <a class="hphone" href="tel:+18655564515" aria-label="Call (865) 556-4515">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+      <span class="tnum">(865) 556-4515</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Heating and cooling help">
+  <div class="wrap">
+    <div>
+      <div class="switch" role="group" aria-label="What needs fixing?">
+        <span class="knob" aria-hidden="true"></span>
+        <button type="button" data-set="heat" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 22c-4-1.4-6-4.6-5.4-8.6.6-3.4 3.3-5.3 4-8.9 2 2 2.8 4.1 2 6.8 1.3-.7 2-2 2-3.4 2.8 2.7 3.5 6.2 2.8 9-.7 2.7-2.7 4.5-5.4 5.1z"/></svg>Heat</button>
+        <button type="button" data-set="cool" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3"/></svg>Cool</button>
+      </div>
+      <div class="swap" aria-live="polite">
+        <h1 data-for="cool">AC quit in <em>July?</em></h1>
+        <h1 data-for="heat">Furnace out in <em>January?</em></h1>
+        <p class="lede" data-for="cool">Call the family-owned crew that has kept Knoxville cool for 30+ years. We find the leak, the bad fan or the worn contactor and get cold air moving again.</p>
+        <p class="lede" data-for="heat">Call the family-owned crew that has kept Knoxville warm for 30+ years. Furnaces, heat pumps and water heaters, repaired or replaced, by people who know your neighborhood.</p>
+        <ul class="chips" data-for="cool" aria-label="Cooling services">
+          <li><a href="#services">AC repair</a></li><li><a href="#services">Heat pumps</a></li><li><a href="#equipment">Ductless mini-splits</a></li>
+        </ul>
+        <ul class="chips" data-for="heat" aria-label="Heating services">
+          <li><a href="#services">Furnace repair</a></li><li><a href="#services">Heat pumps</a></li><li><a href="#services">Water heaters</a></li>
+        </ul>
+      </div>
+      <div class="cta">
+        <a class="btn btn-acc" href="tel:+18655564515">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+          Call <span class="tnum">(865) 556-4515</span></a>
+        <a class="btn btn-line" href="mailto:extremeclimatehc@gmail.com?subject=Free%20estimate%20request&amp;body=Name%3A%20%0D%0AAddress%3A%20%0D%0APhone%3A%20%0D%0AWhat%27s%20wrong%3A%20%0D%0A">Free estimate by email</a>
+      </div>
+      <p class="free"><b>Free estimates</b> on repair &amp; installation · Mon–Fri 8–5, Sat 8–12</p>
+    </div>
+
+    <div class="stat" aria-hidden="true">
+      <div class="shadow"></div>
+      <svg viewBox="0 0 300 300">
+        <circle class="face" cx="150" cy="150" r="146"/>
+        <circle class="bezel" cx="150" cy="150" r="141"/>
+        <g id="ticks"></g>
+        <circle class="track" cx="150" cy="150" r="118" stroke-dasharray="556.06 742" transform="rotate(135 150 150)"/>
+        <circle class="arc" id="arc" cx="150" cy="150" r="118" transform="rotate(135 150 150)" style="stroke-dashoffset:166.8"/>
+        <g class="needle" id="needle" style="transform:rotate(54deg)"><circle cx="150" cy="32" r="11"/></g>
+      </svg>
+      <div class="read">
+        <small>Inside now</small>
+        <div class="temp"><span id="temp">78</span><sup>°</sup></div>
+        <div class="state"><i></i><span id="state">Cooling</span></div>
+      </div>
+      <div class="scale"><span>50°</span><span>90°</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="van">
+  <div class="wrap">
+    <figure class="rise">
+      <img src="../img/van.jpg" width="1400" height="667" alt="Extreme Climate Heating & Cooling service van with the company logo and phone number">
+      <a class="badge" href="#reviews">
+        <strong>4.9</strong>
+        <div><div class="stars" aria-hidden="true">★★★★★</div><span>143 reviews on Google</span></div>
+      </a>
+    </figure>
+    <div class="vancap"><span>Sales · Service · Repair · Installation</span><span>Licensed · Bonded · Insured</span><span>Financing available</span><span>Credit cards accepted</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <h2>Hot or cold, one call fixes it.</h2>
+        <p class="lede">Sales, service, repair and installation for homes across Knoxville and the surrounding areas.</p>
+      </div>
+    </div>
+    <div class="split">
+      <div class="col cool rise">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3"/></svg>Cooling</h3>
+        <ul>
+          <li><b>AC repair</b><span>Finding leaks, refilling refrigerant, broken fans, compressors and contactor switches.</span></li>
+          <li><b>Heat pumps</b><span>Repair and replacement of the system that both heats and cools your home.</span></li>
+          <li><b>Ductless mini-splits</b><span>Daikin and Gree Flexx units for additions, garages and rooms the ducts never reached.</span></li>
+          <li><b>Central air installs</b><span>Right-sized, energy-efficient systems instead of the biggest box on the truck.</span></li>
+        </ul>
+      </div>
+      <div class="col heat rise">
+        <h3><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 22c-4-1.4-6-4.6-5.4-8.6.6-3.4 3.3-5.3 4-8.9 2 2 2.8 4.1 2 6.8 1.3-.7 2-2 2-3.4 2.8 2.7 3.5 6.2 2.8 9-.7 2.7-2.7 4.5-5.4 5.1z"/></svg>Heating</h3>
+        <ul>
+          <li><b>Furnace repair</b><span>Diagnosed and fixed by a technician who knows just what to look for.</span></li>
+          <li><b>Furnace installation</b><span>New Amana and Goodman furnaces, set up cleanly in basements and crawl spaces.</span></li>
+          <li><b>Heat pumps</b><span>Heat that keeps up through a Tennessee winter, installed and serviced.</span></li>
+          <li><b>Water heaters</b><span>Water heater repair, from the same crew that handles your HVAC.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="both">
+      <div class="rise"><h3>Routine maintenance</h3><p>Keep the system you have running longer and catch small problems before they turn into a no-heat or no-AC call.</p></div>
+      <div class="rise"><h3>Ductwork</h3><p>Install, repair and replace. Ducts start breaking down around 15 years and usually last 20–25.</p></div>
+      <div class="rise"><h3>Full replacement</h3><p>A complete install typically takes 3–5 days, and a new system should serve you 15–25 years.</p></div>
+    </div>
+    <div class="work" aria-label="Recent work">
+      <figure><img src="../img/job-basement-1.jpg" width="480" height="640" alt="New furnace and silver flex ducts installed in a basement" loading="lazy"><figcaption>Basement furnace &amp; ductwork</figcaption></figure>
+      <figure><img src="../img/job-furnace.jpg" width="480" height="384" alt="Amana furnace installation" loading="lazy"><figcaption>Amana furnace install</figcaption></figure>
+      <figure><img src="../img/job-condenser.jpg" width="480" height="384" alt="New Amana condenser beside a brick house" loading="lazy"><figcaption>New Amana condenser</figcaption></figure>
+      <figure><img src="../img/job-basement-2.jpg" width="480" height="640" alt="Basement HVAC install with new flex ducts" loading="lazy"><figcaption>New flex duct runs</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="equipment">
+  <div class="wrap">
+    <h2>Equipment we trust in our customers' homes.</h2>
+    <p class="lede">We install brands with long track records and real parts support, sized to your house.</p>
+    <div class="brands">
+      <div class="brand-item rise"><div class="ph"><img src="../img/eq-amana.jpg" alt="Amana outdoor unit" loading="lazy"></div><h3>Amana</h3><p>Around since 1934. Some models carry a lifetime limited compressor warranty from the manufacturer.</p></div>
+      <div class="brand-item rise"><div class="ph word">Goodman</div><h3>Goodman</h3><p>Dependable furnaces, air conditioners and heat pumps for everyday homes.</p></div>
+      <div class="brand-item rise"><div class="ph"><img src="../img/eq-gree-flexx.jpg" alt="Gree Flexx unit" loading="lazy"></div><h3>Gree Flexx</h3><p>Efficiency up to 20 SEER for lower summer power bills.</p></div>
+      <div class="brand-item rise"><div class="ph"><img src="../img/eq-daikin.jpg" alt="Daikin equipment" loading="lazy"></div><h3>Daikin</h3><p>Ductless mini-splits and central air systems.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="air">
+  <div class="wrap air">
+    <div>
+      <h2>Cleaner air, through the ducts you already have.</h2>
+      <p class="lede">Whole-house purifiers mount inside your system and treat the air every time it runs.</p>
+      <ul class="air-list">
+        <li>REME HALO UV</li><li>Bi-Polar 2400</li><li>iWave-R</li><li>iWave-V</li><li>nano Induct</li>
+      </ul>
+    </div>
+    <div class="air-pics">
+      <figure class="rise"><img src="../img/aq-reme-halo.jpg" alt="REME HALO air purifier" loading="lazy"><figcaption>REME HALO</figcaption></figure>
+      <figure class="rise"><img src="../img/aq-bipolar.jpg" alt="Bi-Polar 2400 air purifier" loading="lazy"><figcaption>Bi-Polar 2400</figcaption></figure>
+      <figure class="rise"><img src="../img/aq-iwave-r.jpg" alt="iWave-R air purifier" loading="lazy"><figcaption>iWave-R</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="rev-top">
+      <h2>"Home folk" who show up on time.</h2>
+      <div class="score"><strong>4.9</strong><div><div class="stars" aria-hidden="true">★★★★★</div><span class="tnum">143 reviews on Google</span></div></div>
+    </div>
+    <div class="quotes">
+      <blockquote class="rise"><p>"Landon had my unit working within 30 minutes. On time, very neat and nice young man. I love doing business with 'home folk'. Will continue to use in the future."</p><footer>R. Stephenson</footer></blockquote>
+      <blockquote class="rise"><p>"As always great service. We highly recommend them. Easily a five star company."</p><footer>K. Cruze</footer></blockquote>
+      <blockquote class="rise"><p>"Very prompt, fast service, very polite and courteous. He knew just what to look for to fix our problem. Would definitely recommend Landon and the company!"</p><footer>M. Fuqua</footer></blockquote>
+      <blockquote class="rise"><p>"Very fast service and done an excellent job! Could not ask for a better guy! Thank you for your great work!"</p><footer>G. Atkins</footer></blockquote>
+    </div>
+    <div class="trust">
+      <div><strong>Family-owned</strong><span>and operated, right here in Knoxville</span></div>
+      <div><strong>30+ years</strong><span>our owner's experience in the trade</span></div>
+      <div><strong>Licensed</strong><span>bonded and insured</span></div>
+      <div><strong>BBB A+</strong><span>Accredited since August 2021</span></div>
+      <div><strong>Financing</strong><span>available · credit cards accepted</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap area">
+    <div>
+      <h2>Knoxville and the surrounding areas.</h2>
+      <p class="addr">7622 Maynardville Pike, Knoxville, TN 37938<br><a href="tel:+18655564515" class="tnum">(865) 556-4515</a> · <a href="mailto:extremeclimatehc@gmail.com">extremeclimatehc@gmail.com</a></p>
+      <table class="hours">
+        <tr><td>Monday – Friday</td><td>8 AM – 5 PM</td></tr>
+        <tr><td>Saturday</td><td>8 AM – 12 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div class="map"><iframe title="Map: 7622 Maynardville Pike, Knoxville TN" src="https://www.google.com/maps?q=7622+Maynardville+Pike,+Knoxville,+TN+37938&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final">
+    <div>
+      <h2>Get a free estimate on repair or a new system.</h2>
+      <p>Call during business hours or send us the details by email.</p>
+    </div>
+    <div class="cta" style="margin:0">
+      <a class="btn btn-w" href="tel:+18655564515">Call <span class="tnum">(865) 556-4515</span></a>
+      <a class="btn btn-o" href="mailto:extremeclimatehc@gmail.com?subject=Free%20estimate%20request&amp;body=Name%3A%20%0D%0AAddress%3A%20%0D%0APhone%3A%20%0D%0AWhat%27s%20wrong%3A%20%0D%0A">Email us</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div><b>Extreme Climate Heating &amp; Cooling</b><br>Family-owned · Licensed, bonded &amp; insured<br>7622 Maynardville Pike, Knoxville, TN 37938</div>
+    <div><a href="tel:+18655564515" class="tnum">(865) 556-4515</a><br><a href="mailto:extremeclimatehc@gmail.com">extremeclimatehc@gmail.com</a><br>Mon–Fri 8–5 · Sat 8–12 · Sun closed</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-acc" href="tel:+18655564515" style="--acc:var(--red)">Call <span class="tnum">(865) 556-4515</span></a>
+  <a class="btn btn-line" href="mailto:extremeclimatehc@gmail.com?subject=Free%20estimate%20request&amp;body=Name%3A%20%0D%0AAddress%3A%20%0D%0APhone%3A%20%0D%0AWhat%27s%20wrong%3A%20%0D%0A">Estimate</a>
+</div>
+<div class="pill" aria-hidden="true">Variant 1 · Thermostat</div>
+
+<script>
+(function(){
+  var root=document.documentElement, LEN=556.06, MIN=50, MAX=90;
+  var MODES={cool:{t:78,s:'Cooling'},heat:{t:64,s:'Heating'}};
+  var ticks=document.getElementById('ticks'), ns='http://www.w3.org/2000/svg';
+  for(var v=MIN;v<=MAX;v++){
+    var a=(-135+(v-MIN)/(MAX-MIN)*270)*Math.PI/180, maj=v%10===0, r1=maj?100:104, r2=110;
+    var l=document.createElementNS(ns,'line');
+    l.setAttribute('x1',150+r1*Math.sin(a));l.setAttribute('y1',150-r1*Math.cos(a));
+    l.setAttribute('x2',150+r2*Math.sin(a));l.setAttribute('y2',150-r2*Math.cos(a));
+    l.setAttribute('class','tick'+(maj?' maj':''));ticks.appendChild(l);
+  }
+  var arc=document.getElementById('arc'), needle=document.getElementById('needle'),
+      tempEl=document.getElementById('temp'), stateEl=document.getElementById('state'),
+      reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, cur=null, raf;
+  function setDial(t){
+    var f=(t-MIN)/(MAX-MIN);
+    arc.style.strokeDashoffset=(LEN*(1-f)).toFixed(2);
+    needle.style.transform='rotate('+(-135+f*270)+'deg)';
+  }
+  function count(from,to){
+    cancelAnimationFrame(raf);
+    if(reduce||from===null){tempEl.textContent=to;return}
+    var t0=performance.now(), D=700;
+    (function step(now){
+      var p=Math.min(1,(now-t0)/D), e=1-Math.pow(2,-10*p);
+      tempEl.textContent=Math.round(from+(to-from)*(p===1?1:e));
+      if(p<1)raf=requestAnimationFrame(step);
+    })(t0);
+  }
+  function apply(mode){
+    root.dataset.mode=mode;
+    var m=MODES[mode];
+    document.querySelectorAll('.switch button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===mode)});
+    setDial(m.t); count(cur,m.t); cur=m.t; stateEl.textContent=m.s;
+  }
+  document.querySelectorAll('.switch button').forEach(function(b){
+    b.addEventListener('click',function(){if(root.dataset.mode!==b.dataset.set)apply(b.dataset.set)});
+  });
+  apply(root.dataset.mode);
+
+  if(root.classList.contains('js')){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){io.observe(el)});
+  }
+})();
+</script>
+</body>
+</html>
