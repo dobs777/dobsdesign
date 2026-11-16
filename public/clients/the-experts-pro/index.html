@@ -3,91 +3,388 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Experts Pro · Appliance, heating &amp; air repair in Knoxville</title>
+<meta name="description" content="Family-owned for over 25 years. Appliance repair, heating and air, and electrical service in Knoxville and the surrounding counties. 24-hour emergency service.">
 <meta name="robots" content="noindex">
-<title>The Experts Pro</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700;1,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-  :root { --cor: #1d4ed8; --tinta: #1a1a1a; --suave: #5f5f5f; --fundo: #faf8f5; --cartao: #fff; }
-  * { box-sizing: border-box; margin: 0; }
-  body { font-family: Inter, system-ui, sans-serif; color: var(--tinta); background: var(--fundo); line-height: 1.55; }
-  a { color: inherit; }
-  .aviso { font-size: 13px; text-align: center; padding: 8px 16px; background: #111; color: #ddd; }
-  .hero { min-height: 82vh; display: grid; align-items: end; padding: 32px 20px 48px;
-          background: var(--cor) url('') center/cover; position: relative; color: #fff; }
-  .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 20%, rgba(0,0,0,.75)); }
-  .hero > * { position: relative; max-width: 1040px; width: 100%; margin: 0 auto; }
-  .hero small { position: absolute; right: 12px; bottom: 8px; width: auto; font-size: 11px; opacity: .7; }
-  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(40px, 8vw, 76px); line-height: 1.05; }
-  h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); margin-bottom: 20px; }
-  .resumo { font-size: 19px; max-width: 560px; margin: 14px 0 24px; opacity: .92; }
-  .selo { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.14);
-          backdrop-filter: blur(6px); padding: 8px 14px; border-radius: 99px; font-weight: 500; margin-bottom: 18px; }
-  .selo b { color: #ffd54a; }
-  .botoes { display: flex; flex-wrap: wrap; gap: 12px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px;
-         border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 17px; }
-  .btn.cheio { background: var(--cor); color: #fff; }
-  .hero .btn.cheio { background: #fff; color: var(--tinta); }
-  .btn.vazio { border: 1.5px solid currentColor; }
-  section { max-width: 1040px; margin: 0 auto; padding: 72px 20px; }
-  .reviews { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-  .review { background: var(--cartao); border-radius: 16px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-  .estrelas { color: #e3a008; letter-spacing: 2px; margin-bottom: 10px; }
-  .review blockquote { font-size: 16px; }
-  .review figcaption { margin-top: 12px; color: var(--suave); font-size: 14px; }
-  .galeria { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-  .galeria img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 14px; display: block; }
-  .galeria figcaption { font-size: 11px; color: var(--suave); margin-top: 4px; }
-  .info { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-  .info ul { list-style: none; padding: 0; }
-  .info li { padding: 6px 0; border-bottom: 1px solid #ebe7e1; }
-  .info p { margin-bottom: 10px; }
-  iframe { width: 100%; height: 320px; border: 0; border-radius: 16px; }
-  footer { text-align: center; padding: 40px 20px 100px; color: var(--suave); font-size: 14px; }
-  .fixo { position: fixed; left: 16px; right: 16px; bottom: 16px; display: none; z-index: 5; }
-  @media (max-width: 700px) { .fixo { display: flex; } .fixo .btn { width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,.25); } }
+:root{
+  --navy:#002d66; --navy-2:#003a85; --red:#cc0001; --red-ink:#a30001;
+  --paper:#f5f7fb; --sheet:#fff; --ink:#0d1b33; --muted:#4a5875; --rule:#d9e0ec;
+  --sky:#e6eefa; --yellow:#ffd23f;
+  --display:"Kanit","Arial Black",sans-serif;
+  --body:"Figtree",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --wrap:min(1180px,100% - 32px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em}
+::selection{background:var(--yellow)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-style:italic;font-weight:800;line-height:1;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h2{font-size:clamp(32px,4.6vw,54px);color:var(--navy)}
+.num{font-variant-numeric:tabular-nums}
+
+.preview{background:#111827;color:#d7dce6;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.preview a{color:#fff}
+
+/* header */
+header{background:var(--sheet);border-bottom:4px solid var(--red)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.bar img{width:min(260px,52vw);height:auto}
+.bar nav{display:flex;gap:22px;font-weight:600;font-size:15px}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:10px;font:700 17px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-ink)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-line{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn-line:hover{background:var(--sky)}
+.bar .btn{min-height:46px;padding:0 16px;font-size:16px}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(180deg,#fff 0%,var(--sky) 100%);color:var(--ink);overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(90deg,var(--red) 0 48px,#fff 48px 56px,var(--navy) 56px 104px,#fff 104px 112px)}
+.hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:60px 0 78px}
+.hero h1{font-size:clamp(44px,6.4vw,84px);line-height:.95;color:var(--navy)}
+.hero h1 span{display:block}
+.hero h1 .r{color:var(--red)}
+.lede{font-size:clamp(18px,1.6vw,21px);max-width:34em;margin:22px 0 28px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;font-size:15px;color:var(--muted)}
+.facts b{color:var(--navy);font-weight:700}
+.stars{color:#f5a400;letter-spacing:2px}
+.status{display:inline-flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.25)}
+.dot.off{background:#ffb020;box-shadow:0 0 0 4px rgba(255,176,32,.25)}
+
+.photo{position:relative;justify-self:end;width:100%;max-width:440px}
+.photo img{border-radius:14px;border:6px solid #fff;transform:rotate(1.5deg);box-shadow:0 24px 50px rgba(0,45,102,.22)}
+.seal{position:absolute;left:-34px;bottom:-30px;width:132px;height:132px;transform:rotate(-10deg)}
+.seal text{font:800 italic 11px var(--display);letter-spacing:.14em;fill:#fff}
+
+/* ticket */
+.book{padding:84px 0}
+.book-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:30px}
+.book-head p{margin:0;max-width:30em;color:var(--muted)}
+.ticket{display:grid;grid-template-columns:1fr 360px;background:var(--sheet);border-radius:16px;box-shadow:0 1px 0 var(--rule),0 18px 40px rgba(0,45,102,.08);overflow:hidden}
+.trades{padding:28px 32px 32px}
+.trade + .trade{margin-top:26px}
+.trade h3{font-size:24px;color:var(--navy);display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.trade h3 small{font:500 13px var(--body);font-style:normal;color:var(--muted);letter-spacing:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:600 15px/1.2 var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:999px;padding:10px 16px;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.opt:hover{border-color:var(--navy)}
+.opt[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.slip{position:relative;background:var(--sky);padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px;border-left:2px dashed #9fb4d6}
+.slip::before,.slip::after{content:"";position:absolute;left:-13px;width:24px;height:24px;border-radius:50%;background:var(--paper)}
+.slip::before{top:-12px}.slip::after{bottom:-12px}
+.slip .no{font:500 13px var(--mono);color:var(--muted);letter-spacing:.04em}
+.slip dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px}
+.slip dt{color:var(--muted)}
+.slip dd{margin:0;font-weight:700;color:var(--navy)}
+#job{font-family:var(--display);font-style:italic;font-weight:700;font-size:26px;line-height:1.1;color:var(--navy);min-height:2.2em}
+#job.empty{color:#8a9bbb}
+.slip .btn{width:100%}
+.slip .fine{font-size:13px;color:var(--muted);margin:0}
+
+/* why */
+.why{background:var(--sheet);border-block:1px solid var(--rule);padding:84px 0}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.why-grid > p{font-size:19px;color:var(--muted);margin:18px 0 0}
+.points{list-style:none;margin:0;padding:0;counter-reset:p}
+.points li{display:grid;grid-template-columns:76px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--rule)}
+.points li:last-child{border-bottom:1px solid var(--rule)}
+.points .big{font:800 italic 44px/1 var(--display);color:var(--red)}
+.points b{display:block;font-size:19px;color:var(--navy);margin-bottom:2px}
+.points span{color:var(--muted)}
+.cards{display:flex;gap:6px;margin-top:10px}
+.cards img{height:26px;width:auto}
+
+/* reviews */
+.reviews{padding:84px 0}
+.rev-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:34px}
+.score{display:flex;align-items:center;gap:16px;text-decoration:none;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:12px 18px}
+.score .n{font:800 italic 42px/1 var(--display);color:var(--navy)}
+.score small{display:block;color:var(--muted);font-size:14px}
+.quotes{columns:3 300px;column-gap:20px}
+blockquote{break-inside:avoid;margin:0 0 20px;background:var(--sheet);border-radius:12px;padding:22px 24px;border-top:4px solid var(--navy)}
+blockquote:nth-child(3n+2){border-top-color:var(--red)}
+blockquote p{margin:0}
+blockquote.lead p{font-size:19px;line-height:1.5}
+.src{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* contact */
+.contact{background:var(--navy);color:#fff;padding:80px 0 96px}
+.contact h2{color:#fff}
+.c-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.c-grid p{color:#c9d6ec;font-size:18px}
+.phones{display:grid;gap:12px;margin:26px 0}
+.phones a{display:flex;justify-content:space-between;align-items:center;gap:16px;text-decoration:none;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:16px 20px}
+.phones a:hover{background:rgba(255,255,255,.13)}
+.phones .num{font:800 italic clamp(26px,3.4vw,36px)/1 var(--display)}
+.phones small{color:#c9d6ec;font-size:14px;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:16px}
+td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+td:last-child{text-align:right}
+tr.today td{color:var(--yellow);font-weight:700}
+.addr{margin-top:22px;font-size:15px;color:#c9d6ec;line-height:1.7}
+.addr a{color:#fff}
+
+footer{background:#00204a;color:#9fb0cc;font-size:14px;padding:22px 0 26px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:#fff}
+
+.dock{display:none}
+
+@media (max-width:900px){
+  .bar nav{display:none}
+  .hero-in{grid-template-columns:1fr;padding:44px 0 64px;gap:44px}
+  .photo{justify-self:center;max-width:360px;margin-left:30px}
+  .ticket{grid-template-columns:1fr}
+  .slip{border-left:0;border-top:2px dashed #9fb4d6}
+  .slip::before,.slip::after{top:-13px;bottom:auto}
+  .slip::before{left:-12px}.slip::after{left:auto;right:-12px}
+  .why-grid,.c-grid{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .bar .btn{display:none}
+  .trades{padding:22px 18px 24px}
+  .slip{padding:24px 18px}
+  .book,.why,.reviews{padding:60px 0}
+  .points li{grid-template-columns:58px 1fr;gap:12px}
+  .points .big{font-size:34px}
+  .seal{width:104px;height:104px;left:-26px}
+  .phones a{flex-direction:column;align-items:flex-start;gap:6px}
+  .phones small{text-align:left}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--rule);box-shadow:0 -8px 24px rgba(0,0,0,.08)}
+  .dock .btn{min-height:50px;padding:0 10px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="aviso">Preview made by Henrique · dobsdesign.online@gmail.com · (719) 769-1280 · not the official website yet</div>
 
-<header class="hero">
-  <div>
-    <div class="selo"><b>★ 4.7</b> · 61 Google reviews</div>
-    <h1>The Experts Pro</h1>
-    <p class="resumo">Heating and cooling you can count on in Knoxville.</p>
-    <div class="botoes">
-      <a class="btn cheio" href="tel:+1865-388-8884">Get a free quote</a>
-      <a class="btn vazio" href="#onde">Get directions</a>
-    </div>
+<div class="preview">Preview made by Henrique · <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> · (719) 769-1280 · not the official The Experts Pro website yet</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="-1 -1 2 2"><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="msg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" aria-label="The Experts Pro, home"><img src="logo.png" alt="The Experts Pro · Appliances, Heating, Air" width="400" height="119"></a>
+    <nav aria-label="Sections"><a href="#book">What's broken?</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#contact">Hours</a></nav>
+    <a class="btn btn-red" href="tel:+18653888884"><svg><use href="#phone"/></svg><span class="num">(865) 388-8884</span></a>
   </div>
-  <small></small>
 </header>
 
-<section>
-  <h2>What customers say</h2>
-  <div class="reviews"></div>
-  <p style="margin-top:20px"><a href="https://www.google.com/maps/search/The+Experts+Pro+Knoxville">See all 61 reviews on Google</a></p>
-</section>
-
-<section>
-  <div class="galeria"></div>
-</section>
-
-<section id="onde">
-  <h2>Find us</h2>
-  <div class="info">
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-in">
     <div>
-      <p></p>
-      <p><a href="tel:(865) 388-8884">(865) 388-8884</a></p>
-      <ul><li>Monday: 8:00 AM – 5:00 PM</li><li>Tuesday: 8:00 AM – 5:00 PM</li><li>Wednesday: 8:00 AM – 5:00 PM</li><li>Thursday: 8:00 AM – 5:00 PM</li><li>Friday: 8:00 AM – 5:00 PM</li><li>Saturday: 9:00 AM – 12:00 PM</li><li>Sunday: Closed</li></ul>
+      <h1><span>Fridge, furnace</span><span>or fuse box.</span><span class="r">One call.</span></h1>
+      <p class="lede">Appliance repair, heating and air, and electrical service from one family-owned Knoxville company. Over 25 years in business, with 24-hour emergency service.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="tel:+18653888884"><svg><use href="#phone"/></svg>Call <span class="num">(865) 388-8884</span></a>
+        <a class="btn btn-line" href="#book">Tell us what's broken</a>
+      </div>
+      <div class="facts">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>4.7</b> from <b>61</b> Google reviews</span>
+        <span class="status"><i class="dot" id="dot"></i><span id="open">Mon–Fri 8–5, Sat 9–12</span></span>
+      </div>
     </div>
-    <iframe src="https://www.google.com/maps?output=embed&amp;q=The%20Experts%20Pro%2C%20" loading="lazy" title="Map"></iframe>
+    <div class="photo">
+      <img src="ac.jpg" alt="Two outdoor air conditioning units beside a brick house" width="600" height="473">
+      <svg class="seal" viewBox="0 0 132 132" role="img" aria-label="24-hour emergency service">
+        <defs><path id="ring" d="M66 66 m-48 0 a48 48 0 1 1 96 0 a48 48 0 1 1 -96 0"/></defs>
+        <circle cx="66" cy="66" r="64" fill="#cc0001"/>
+        <circle cx="66" cy="66" r="58" fill="none" stroke="#fff" stroke-width="2"/>
+        <circle cx="66" cy="66" r="36" fill="#002d66" stroke="#fff" stroke-width="3"/>
+        <g fill="#fff"><use href="#star" x="54" y="38" width="22" height="22"/><use href="#star" x="42" y="62" width="22" height="22"/><use href="#star" x="66" y="62" width="22" height="22"/></g>
+        <text><textPath href="#ring" startOffset="0">24-HOUR EMERGENCY · 24-HOUR EMERGENCY ·</textPath></text>
+      </svg>
+    </div>
   </div>
 </section>
 
-<footer>The Experts Pro · </footer>
-<div class="fixo"><a class="btn cheio" href="tel:+1865-388-8884">Get a free quote</a></div>
+<section class="book" id="book" aria-labelledby="book-h">
+  <div class="wrap">
+    <div class="book-head">
+      <h2 id="book-h">What's broken?</h2>
+      <p>Tap it below. We'll fill in the service ticket so your call, text or email starts with the right details.</p>
+    </div>
+    <div class="ticket">
+      <div class="trades">
+        <div class="trade">
+          <h3>Appliances <small>Residential</small></h3>
+          <div class="opts">
+            <button class="opt" type="button">Refrigerator</button>
+            <button class="opt" type="button">Freezer</button>
+            <button class="opt" type="button">Ice maker or water dispenser</button>
+            <button class="opt" type="button">Dishwasher</button>
+            <button class="opt" type="button">Washer</button>
+            <button class="opt" type="button">Dryer</button>
+            <button class="opt" type="button">Stove, oven or range</button>
+            <button class="opt" type="button">Microwave</button>
+            <button class="opt" type="button">Dryer vent cleaning</button>
+          </div>
+        </div>
+        <div class="trade">
+          <h3>Heating &amp; air <small>Residential &amp; commercial</small></h3>
+          <div class="opts">
+            <button class="opt" type="button">AC not cooling</button>
+            <button class="opt" type="button">New AC installation</button>
+            <button class="opt" type="button">Furnace or heating repair</button>
+            <button class="opt" type="button">Heat pump</button>
+            <button class="opt" type="button">Thermostat</button>
+            <button class="opt" type="button">Maintenance tune-up</button>
+            <button class="opt" type="button">System replacement or upgrade</button>
+          </div>
+        </div>
+        <div class="trade">
+          <h3>Electrical <small>Residential &amp; commercial</small></h3>
+          <div class="opts">
+            <button class="opt" type="button">Electrical service</button>
+          </div>
+        </div>
+      </div>
+      <aside class="slip" aria-live="polite">
+        <span class="no">SERVICE TICKET · KNOXVILLE</span>
+        <div id="job" class="empty">Pick a job on the left</div>
+        <dl>
+          <dt>Hours</dt><dd>Mon–Fri 8–5, Sat 9–12</dd>
+          <dt>After hours</dt><dd>24-hour emergency</dd>
+          <dt>Payment</dt><dd>Visa, MC, Amex, Discover</dd>
+        </dl>
+        <a class="btn btn-red" href="tel:+18653888884"><svg><use href="#phone"/></svg>Call <span class="num">(865) 388-8884</span></a>
+        <a class="btn btn-navy" id="sms" href="sms:+18653888884"><svg><use href="#msg"/></svg>Text the details</a>
+        <a class="btn btn-line" id="mail" href="mailto:expertllc@live.com?subject=Service%20request">Email the details</a>
+        <p class="fine">Text and email open your phone's own app with a message ready. Add your address and send.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why" aria-labelledby="why-h">
+  <div class="wrap why-grid">
+    <div>
+      <h2 id="why-h">One company for the whole house.</h2>
+      <p>The washer, the heat pump and the outlet in the garage don't need three different service calls. The same team handles all of it, in Knoxville and the surrounding counties.</p>
+    </div>
+    <ul class="points">
+      <li><span class="big num">25+</span><div><b>Years in business</b><span>Family owned and operated the whole time.</span></div></li>
+      <li><span class="big num">24h</span><div><b>Emergency service</b><span>No heat in January or a dead fridge on a Sunday: call the same number.</span></div></li>
+      <li><span class="big num">3</span><div><b>Trades under one roof</b><span>Appliances, heating &amp; air, and electrical, for homes and businesses.</span></div>
+      </li>
+      <li><span class="big">$</span><div><b>Cards accepted</b><span>Pay the tech on the spot.</span>
+        <div class="cards"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 26'%3E%3Crect width='40' height='26' rx='4' fill='%231a1f71'/%3E%3Ctext x='20' y='17' fill='%23fff' font-family='Arial' font-weight='bold' font-style='italic' font-size='10' text-anchor='middle'%3EVISA%3C/text%3E%3C/svg%3E" alt="Visa"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 26'%3E%3Crect width='40' height='26' rx='4' fill='%23222'/%3E%3Ccircle cx='16' cy='13' r='7' fill='%23eb001b'/%3E%3Ccircle cx='24' cy='13' r='7' fill='%23f79e1b' fill-opacity='.9'/%3E%3C/svg%3E" alt="Mastercard"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 26'%3E%3Crect width='40' height='26' rx='4' fill='%232e77bc'/%3E%3Ctext x='20' y='16' fill='%23fff' font-family='Arial' font-weight='bold' font-size='7' text-anchor='middle'%3EAMEX%3C/text%3E%3C/svg%3E" alt="American Express"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 26'%3E%3Crect width='40' height='26' rx='4' fill='%23fff' stroke='%23ccc'/%3E%3Ctext x='17' y='16' fill='%23222' font-family='Arial' font-weight='bold' font-size='6' text-anchor='middle'%3EDISCOVER%3C/text%3E%3Ccircle cx='33' cy='13' r='3.5' fill='%23f58220'/%3E%3C/svg%3E" alt="Discover"></div>
+      </div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="rev-head">
+      <h2 id="rev-h">"They can repair anything."</h2>
+      <a class="score" href="https://maps.google.com/?cid=1979529786168924471" target="_blank" rel="noopener">
+        <span class="n num">4.7</span>
+        <span><span class="stars" aria-hidden="true">★★★★★</span><small>61 reviews on Google · read them</small></span>
+      </a>
+    </div>
+    <div class="quotes">
+      <blockquote class="lead"><p>Alex was professional and friendly. He found the problem in under 10 minutes, showed me exactly what was wrong, had the part in his van and gave me a fair price immediately. In and out in less than an hour.</p></blockquote>
+      <blockquote><p>Since I found Expert service, I've not called anyone else to perform regular maintenance or repair work. I also like the fact they can repair anything so I don't have to call multiple techs.</p></blockquote>
+      <blockquote><p>I like the all in one upfront pricing. They were prompt, professional, all business and clearly masters of their domain. I would absolutely call on them again.</p></blockquote>
+      <blockquote><p>When the new part was installed, the tech tested it, didn't like a sound he heard, and discovered another part was also broken. He fixed it there on the spot, no questions. The washing machine works and sounds great again.</p></blockquote>
+      <blockquote><p>Great company. I would definitely use them again!</p></blockquote>
+    </div>
+    <p class="src">Customer comments as posted on theexpertspro.com, shortened.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="c-h">
+  <div class="wrap c-grid">
+    <div>
+      <h2 id="c-h">Call, and we'll come to you.</h2>
+      <p>Serving Knoxville and the surrounding counties.</p>
+      <div class="phones">
+        <a href="tel:+18653888884"><span class="num">(865) 388-8884</span><small>Main line<br>24-hour emergency</small></a>
+        <a href="tel:+18652288646"><span class="num">(865) 228-8646</span><small>Second line</small></a>
+      </div>
+      <div class="addr">
+        <a href="mailto:expertllc@live.com">expertllc@live.com</a><br>
+        The Experts Pro · P.O. Box 50934, Knoxville, TN 37950<br>
+        <a href="https://www.facebook.com/pg/The-Experts-Pro-675180192685609/reviews/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div>
+      <table aria-label="Office hours">
+        <tbody id="hours">
+          <tr data-d="1"><td>Monday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>9:00 AM – 12:00 PM</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Emergencies only</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© The Experts Pro · Knoxville, TN</span><span>Preview by <a href="mailto:dobsdesign.online@gmail.com">Dobs Design</a></span></div></footer>
+
+<div class="dock">
+  <a class="btn btn-red" href="tel:+18653888884"><svg><use href="#phone"/></svg>Call</a>
+  <a class="btn btn-navy" href="#book">What's broken?</a>
+</div>
+
+<script>
+// open/closed in Knoxville time (Google hours)
+(function(){
+  var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(t){return (p.find(function(x){return x.type===t})||{}).value};
+  var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+  var h=(+g('hour')%24)+(+g('minute'))/60;
+  var open=(d>=1&&d<=5&&h>=8&&h<17)||(d===6&&h>=9&&h<12);
+  document.getElementById('open').textContent=open?'Open now':'Office closed · 24-hour emergency line';
+  if(!open)document.getElementById('dot').classList.add('off');
+  var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+})();
+// service ticket
+(function(){
+  var job=document.getElementById('job'),sms=document.getElementById('sms'),mail=document.getElementById('mail');
+  var sep=/iPhone|iPad|Mac/.test(navigator.userAgent)?'&':'?';
+  document.querySelectorAll('.opt').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.opt[aria-pressed="true"]').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      var t=b.textContent.trim();
+      job.textContent=t;job.classList.remove('empty');
+      var body='Hi, I need help with: '+t+'. My address is ';
+      sms.href='sms:+18653888884'+sep+'body='+encodeURIComponent(body);
+      mail.href='mailto:expertllc@live.com?subject='+encodeURIComponent('Service request: '+t)+'&body='+encodeURIComponent(body);
+      if(matchMedia('(max-width:900px)').matches)job.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  });
+})();
+</script>
 </body>
 </html>
