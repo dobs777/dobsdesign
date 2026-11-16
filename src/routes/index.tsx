@@ -189,7 +189,7 @@ function Contact() {
       {state === "error" && (
         <p className="form-error wide" role="alert">
           The request didn't go through. Email me at{" "}
-          <a href="mailto:henrique.dobscha@gmail.com">henrique.dobscha@gmail.com</a> instead.
+          <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> instead.
         </p>
       )}
     </form>
@@ -323,7 +323,7 @@ function Index() {
 
       <footer className="foot">
         <span>© {new Date().getFullYear()} DobsDesign</span>
-        <a href="mailto:henrique.dobscha@gmail.com">henrique.dobscha@gmail.com</a>
+        <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a>
       </footer>
     </div>
   );

@@ -19,7 +19,7 @@ export const Route = createFileRoute("/websites")({
   component: Websites,
 });
 
-const EMAIL = "henrique.dobscha@gmail.com";
+const EMAIL = "dobsdesign.online@gmail.com";
 
 type Sample = "dentist" | "plumber" | "salon";
 
