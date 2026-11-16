@@ -3,91 +3,319 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knoxville Cosmetic Dentistry · Dr. Harold Silber · West Knoxville</title>
+<meta name="description" content="Cosmetic and family dentistry with Dr. Harold Silber at 10642 Deerbrook Dr, West Knoxville. 4.9 stars from 285 Google reviews. Most dental insurance accepted.">
 <meta name="robots" content="noindex">
-<title>Knoxville Cosmetic Dentistry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --cor: #0e7490; --tinta: #1a1a1a; --suave: #5f5f5f; --fundo: #faf8f5; --cartao: #fff; }
-  * { box-sizing: border-box; margin: 0; }
-  body { font-family: Inter, system-ui, sans-serif; color: var(--tinta); background: var(--fundo); line-height: 1.55; }
-  a { color: inherit; }
-  .aviso { font-size: 13px; text-align: center; padding: 8px 16px; background: #111; color: #ddd; }
-  .hero { min-height: 82vh; display: grid; align-items: end; padding: 32px 20px 48px;
-          background: var(--cor) url('') center/cover; position: relative; color: #fff; }
-  .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 20%, rgba(0,0,0,.75)); }
-  .hero > * { position: relative; max-width: 1040px; width: 100%; margin: 0 auto; }
-  .hero small { position: absolute; right: 12px; bottom: 8px; width: auto; font-size: 11px; opacity: .7; }
-  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(40px, 8vw, 76px); line-height: 1.05; }
-  h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); margin-bottom: 20px; }
-  .resumo { font-size: 19px; max-width: 560px; margin: 14px 0 24px; opacity: .92; }
-  .selo { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.14);
-          backdrop-filter: blur(6px); padding: 8px 14px; border-radius: 99px; font-weight: 500; margin-bottom: 18px; }
-  .selo b { color: #ffd54a; }
-  .botoes { display: flex; flex-wrap: wrap; gap: 12px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px;
-         border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 17px; }
-  .btn.cheio { background: var(--cor); color: #fff; }
-  .hero .btn.cheio { background: #fff; color: var(--tinta); }
-  .btn.vazio { border: 1.5px solid currentColor; }
-  section { max-width: 1040px; margin: 0 auto; padding: 72px 20px; }
-  .reviews { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-  .review { background: var(--cartao); border-radius: 16px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-  .estrelas { color: #e3a008; letter-spacing: 2px; margin-bottom: 10px; }
-  .review blockquote { font-size: 16px; }
-  .review figcaption { margin-top: 12px; color: var(--suave); font-size: 14px; }
-  .galeria { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-  .galeria img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 14px; display: block; }
-  .galeria figcaption { font-size: 11px; color: var(--suave); margin-top: 4px; }
-  .info { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-  .info ul { list-style: none; padding: 0; }
-  .info li { padding: 6px 0; border-bottom: 1px solid #ebe7e1; }
-  .info p { margin-bottom: 10px; }
-  iframe { width: 100%; height: 320px; border: 0; border-radius: 16px; }
-  footer { text-align: center; padding: 40px 20px 100px; color: var(--suave); font-size: 14px; }
-  .fixo { position: fixed; left: 16px; right: 16px; bottom: 16px; display: none; z-index: 5; }
-  @media (max-width: 700px) { .fixo { display: flex; } .fixo .btn { width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,.25); } }
+:root{
+  --cream:#fffaf4; --sheet:#fff; --ink:#1f2a33; --slate:#33475b; --muted:#5d6b78; --rule:#eadfd2;
+  --orange:#ff8200; --orange-ink:#c45f00; --peach:#ffe9d3; --mint:#e3f4ee; --green:#1b7a5a;
+  --display:"Young Serif",Georgia,serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --wrap:min(1160px,100% - 32px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--body);overflow-x:hidden}
+img,iframe{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em}
+::selection{background:var(--peach)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;color:var(--slate)}
+h2{font-size:clamp(32px,4.4vw,52px)}
+.num{font-variant-numeric:tabular-nums}
+
+.preview{background:#1f2a33;color:#d9dee3;font-size:13px;text-align:center;padding:8px 16px;line-height:1.4}
+.preview a{color:#fff}
+
+header{position:sticky;top:0;z-index:5;background:rgba(255,250,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark svg{width:42px;height:42px;flex:none}
+.mark b{display:block;font:400 19px/1.1 var(--display);color:var(--slate)}
+.mark small{display:block;font-size:13px;color:var(--muted)}
+.bar nav{display:flex;gap:24px;font-weight:500;font-size:15px}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--slate)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:600 17px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-o{background:var(--orange);color:#1f1300}
+.btn-o:hover{background:#ff9426}
+.btn-s{background:var(--slate);color:#fff}
+.btn-s:hover{background:#26384a}
+.btn-l{border-color:var(--slate);color:var(--slate);background:transparent}
+.btn-l:hover{background:var(--sheet)}
+.bar .btn{min-height:44px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{padding:64px 0 40px}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,6vw,78px)}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.36em;overflow:visible}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:32em;margin:26px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.rating{display:flex;align-items:center;gap:14px;margin-top:30px;text-decoration:none;width:fit-content}
+.rating .n{font:400 40px/1 var(--display);color:var(--slate)}
+.stars{color:var(--orange);letter-spacing:2px;font-size:17px}
+.rating small{display:block;color:var(--muted);font-size:14px}
+
+.note{position:relative;background:var(--sheet);border-radius:22px;padding:34px 32px 30px;box-shadow:0 2px 0 var(--rule),0 30px 60px -20px rgba(51,71,91,.25)}
+.note::before{content:"";position:absolute;inset:-12px 26px auto auto;width:74px;height:26px;background:var(--peach);border-radius:4px;transform:rotate(6deg)}
+.note .q{font:400 clamp(22px,2.2vw,27px)/1.35 var(--display);color:var(--slate);margin:0}
+.note .who{margin-top:18px;font-size:15px;color:var(--muted)}
+.note .who b{color:var(--ink)}
+
+.strip{display:flex;flex-wrap:wrap;gap:10px 34px;padding:22px 0;border-block:1px solid var(--rule);margin-top:56px;font-size:15px;color:var(--muted)}
+.strip b{color:var(--ink);font-weight:600}
+
+/* care */
+.care{padding:88px 0}
+.care-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.care-grid > div > p{color:var(--muted);font-size:18px;margin:18px 0 0}
+.groups{display:grid;grid-template-columns:1fr 1fr;gap:34px 40px}
+.groups h3{font-size:23px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.groups h3 i{width:12px;height:12px;border-radius:50%;background:var(--orange);flex:none}
+.groups ul{list-style:none;margin:0;padding:0}
+.groups li{padding:8px 0;border-bottom:1px solid var(--rule)}
+.groups li:last-child{border-bottom:0}
+
+/* insurance */
+.ins{background:var(--sheet);border-block:1px solid var(--rule);padding:88px 0}
+.ins-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.ins-grid > div > p{color:var(--muted);font-size:18px;margin:18px 0 0}
+.check{background:var(--cream);border-radius:20px;padding:28px;border:1px solid var(--rule)}
+.check label{display:block;font-weight:600;margin-bottom:10px}
+.check input{width:100%;font:500 18px var(--body);padding:15px 18px;border-radius:12px;border:2px solid #d8cbbb;background:#fff;color:var(--ink)}
+.check input:focus{outline:none;border-color:var(--orange)}
+.check input::placeholder{color:#9a8f83}
+#answer{margin-top:16px;min-height:84px;border-radius:14px;padding:16px 18px;font-size:16px;background:#fff;border:1px dashed #d8cbbb;color:var(--muted)}
+#answer.yes{background:var(--mint);border:1px solid #b6e0cf;color:var(--ink)}
+#answer.no{background:var(--peach);border:1px solid #f6c99c;color:var(--ink)}
+#answer b{display:block;font:400 22px/1.2 var(--display);color:var(--slate);margin-bottom:4px}
+#answer.yes b{color:var(--green)}
+.pays{margin-top:20px;font-size:15px;color:var(--muted)}
+.pays b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips button{font:500 14px var(--body);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:7px 12px;cursor:pointer;color:var(--slate)}
+.chips button:hover{border-color:var(--orange)}
+
+/* words */
+.words{padding:88px 0}
+.words-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:34px}
+.words-head a{font-weight:600;color:var(--orange-ink)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+blockquote{margin:0;background:var(--sheet);border-radius:18px;padding:26px;border:1px solid var(--rule);display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+blockquote p{margin:0}
+blockquote cite{font-style:normal;font-weight:600;font-size:15px;color:var(--slate)}
+blockquote.big{grid-column:span 2;background:var(--slate);border-color:var(--slate);color:#eef2f6}
+blockquote.big p{font:400 clamp(21px,2vw,25px)/1.4 var(--display)}
+blockquote.big cite{color:var(--peach)}
+.src{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* visit */
+.visit{padding:0 0 96px}
+.visit-card{display:grid;grid-template-columns:1fr 1fr;background:var(--sheet);border-radius:24px;overflow:hidden;border:1px solid var(--rule)}
+.visit-info{padding:44px 44px 40px}
+.visit-info p{color:var(--muted)}
+.big-phone{display:inline-block;font:400 clamp(30px,3.6vw,42px)/1 var(--display);color:var(--slate);text-decoration:none;margin:10px 0 20px}
+table{width:100%;border-collapse:collapse;font-size:16px;margin:8px 0 24px}
+td{padding:9px 0;border-bottom:1px solid var(--rule)}
+td:last-child{text-align:right}
+tr.today td{font-weight:700;color:var(--orange-ink)}
+.visit iframe{width:100%;height:100%;min-height:420px;border:0}
+
+footer{border-top:1px solid var(--rule);padding:22px 0 26px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+.dock{display:none}
+
+@media (max-width:900px){
+  .bar nav{display:none}
+  .hero{padding:40px 0 24px}
+  .hero-in,.care-grid,.ins-grid,.visit-card{grid-template-columns:1fr;gap:36px}
+  .visit-card{gap:0}
+  .quotes{grid-template-columns:1fr}
+  blockquote.big{grid-column:auto}
+  .visit iframe{min-height:300px}
+}
+@media (max-width:600px){
+  body{padding-bottom:76px}
+  .bar .btn{display:none}
+  .mark small{display:none}
+  .groups{grid-template-columns:1fr;gap:28px}
+  .care,.ins,.words{padding:60px 0}
+  .visit{padding-bottom:60px}
+  .visit-info{padding:30px 22px}
+  .note{padding:28px 22px 24px}
+  .check{padding:20px}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:6;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--rule);box-shadow:0 -8px 24px rgba(0,0,0,.06)}
+  .dock .btn{min-height:50px;padding:0 10px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="aviso">Preview made by Henrique · dobsdesign.online@gmail.com · not the official website yet</div>
 
-<header class="hero">
-  <div>
-    <div class="selo"><b>★ 4.9</b> · 285 Google reviews</div>
-    <h1>Knoxville Cosmetic Dentistry</h1>
-    <p class="resumo">Gentle, trusted dental care in Knoxville.</p>
-    <div class="botoes">
-      <a class="btn cheio" href="tel:+1865-966-4035">Book an appointment</a>
-      <a class="btn vazio" href="#onde">Get directions</a>
-    </div>
+<div class="preview">Preview made by Henrique · <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> · (719) 769-1280 · not the official Knoxville Cosmetic Dentistry website yet</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top">
+      <svg viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="20" fill="#ff8200"/><path d="M11 18c2.5 7 17.5 7 20 0" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <span><b>Knoxville Cosmetic Dentistry</b><small>Dr. Harold Silber · West Knoxville</small></span>
+    </a>
+    <nav aria-label="Sections"><a href="#care">Care</a><a href="#insurance">Insurance</a><a href="#patients">Patients</a><a href="#visit">Visit</a></nav>
+    <a class="btn btn-o" href="tel:+18659664035"><svg><use href="#phone"/></svg><span class="num">(865) 966-4035</span></a>
   </div>
-  <small></small>
 </header>
 
-<section>
-  <h2>What customers say</h2>
-  <div class="reviews"></div>
-  <p style="margin-top:20px"><a href="https://maps.google.com/?cid=16871162242204146973&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA">See all 285 reviews on Google</a></p>
-</section>
-
-<section>
-  <div class="galeria"></div>
-</section>
-
-<section id="onde">
-  <h2>Find us</h2>
-  <div class="info">
-    <div>
-      <p>10642 Deerbrook Dr, Knoxville, TN 37922</p>
-      <p><a href="tel:(865) 966-4035">(865) 966-4035</a></p>
-      <ul><li>Monday: 8:00 AM – 5:00 PM</li><li>Tuesday: 8:00 AM – 5:00 PM</li><li>Wednesday: 8:00 AM – 5:00 PM</li><li>Thursday: 8:00 AM – 5:00 PM</li><li>Friday: Closed</li><li>Saturday: Closed</li><li>Sunday: Closed</li></ul>
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <h1>A dentist even nervous patients <em>like.<svg viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 6 C 30 22, 70 22, 97 6" fill="none" stroke="#ff8200" stroke-width="5" stroke-linecap="round"/></svg></em></h1>
+        <p class="lede">Cosmetic and family dentistry with Dr. Harold Silber on Deerbrook Drive in West Knoxville. Cleanings, crowns, veneers, whitening and implants, with a team that doesn't rush you.</p>
+        <div class="cta">
+          <a class="btn btn-o" href="tel:+18659664035"><svg><use href="#phone"/></svg>Call to book</a>
+          <a class="btn btn-l" href="#insurance">Is my insurance accepted?</a>
+        </div>
+        <a class="rating" href="https://maps.google.com/?cid=16871162242204146973" target="_blank" rel="noopener">
+          <span class="n num">4.9</span>
+          <span><span class="stars" aria-hidden="true">★★★★★</span><small>285 Google reviews</small></span>
+        </a>
+      </div>
+      <figure class="note" style="margin:0">
+        <p class="q">"For a person who has always had anxiety about the dentist, this is the place for you! Dr. Silber makes you feel like a family member, and never makes you feel rushed."</p>
+        <figcaption class="who"><b>Lynda</b> · patient</figcaption>
+      </figure>
     </div>
-    <iframe src="https://www.google.com/maps?output=embed&amp;q=Knoxville%20Cosmetic%20Dentistry%2C%2010642%20Deerbrook%20Dr%2C%20Knoxville%2C%20TN%2037922" loading="lazy" title="Map"></iframe>
+    <div class="strip">
+      <span>Some patients for <b>20+ years</b></span>
+      <span><b>40+ insurance plans</b> in network</span>
+      <span><b>CareCredit</b> financing</span>
+      <span><b>24-hour</b> answering service</span>
+    </div>
   </div>
 </section>
 
-<footer>Knoxville Cosmetic Dentistry · 10642 Deerbrook Dr, Knoxville, TN 37922</footer>
-<div class="fixo"><a class="btn cheio" href="tel:+1865-966-4035">Book an appointment</a></div>
+<section class="care" id="care" aria-labelledby="care-h">
+  <div class="wrap care-grid">
+    <div>
+      <h2 id="care-h">Everything from a cleaning to a new smile.</h2>
+      <p>Dental care for all ages, from a child's first sealants to implants and veneers. Whole families see Dr. Silber.</p>
+    </div>
+    <div class="groups">
+      <div><h3><i></i>Cosmetic</h3><ul><li>Veneers</li><li>Teeth whitening</li><li>Bonding</li><li>Orthodontics &amp; retainers</li></ul></div>
+      <div><h3><i></i>Restore</h3><ul><li>Implants</li><li>Crowns &amp; bridges</li><li>Dentures</li><li>Fillings &amp; root canals</li></ul></div>
+      <div><h3><i></i>Prevent</h3><ul><li>Cleanings &amp; exams</li><li>Digital X-rays</li><li>Fluoride &amp; sealants</li><li>Kids dentistry</li></ul></div>
+      <div><h3><i></i>Comfort &amp; urgent</h3><ul><li>Emergency care</li><li>Night guards</li><li>Sleep apnea</li><li>Sensitivity treatment</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="ins" id="insurance" aria-labelledby="ins-h">
+  <div class="wrap ins-grid">
+    <div>
+      <h2 id="ins-h">Check your insurance in two seconds.</h2>
+      <p>The office is in network with more than 40 dental plans. Start typing yours. If it isn't listed, call anyway: the team will look it up and walk you through your benefits.</p>
+      <p class="pays"><b>Payment:</b> cash, check, credit and debit cards, FSA/HSA, and CareCredit financing. Copays are due at the visit. Not in network with HMO plans.</p>
+    </div>
+    <div class="check">
+      <label for="plan">Your dental insurance</label>
+      <input id="plan" type="text" autocomplete="off" placeholder="e.g. Delta Dental">
+      <div class="chips" aria-label="Common plans">
+        <button type="button">Delta Dental</button><button type="button">Cigna</button><button type="button">MetLife</button><button type="button">Aetna</button><button type="button">Blue Cross</button>
+      </div>
+      <div id="answer" aria-live="polite">Type a plan name and the answer shows here.</div>
+    </div>
+  </div>
+</section>
+
+<section class="words" id="patients" aria-labelledby="w-h">
+  <div class="wrap">
+    <div class="words-head">
+      <h2 id="w-h">"Don't be afraid of Dr. Silber."</h2>
+      <a href="https://maps.google.com/?cid=16871162242204146973" target="_blank" rel="noopener">Read all 285 reviews on Google</a>
+    </div>
+    <div class="quotes">
+      <blockquote class="big"><p>I've gone to Dr. Silber for over 20 years. He is one of the most professional and compassionate providers in the field, and he strives to make procedures as painless as possible.</p><cite>Paula</cite></blockquote>
+      <blockquote><p>I had a dental emergency and almost had work done at another office. I am SO THANKFUL I chose Dr. Silber. He makes you feel totally relaxed while you are sitting in his chair!</p><cite>Brianna</cite></blockquote>
+      <blockquote><p>Typically I am tentative about visits to the dentist. This was a five star experience. There was no waiting, and the hygienist explained the procedures with confidence.</p><cite>Linda</cite></blockquote>
+      <blockquote><p>He is kind and caring through your whole visit. His staff values your time. The facility is clean. My entire family sees Dr. Silber!</p><cite>Liz</cite></blockquote>
+      <blockquote><p>If you are a part of Vol Nation, then you will love the office decor!</p><cite>Linda</cite></blockquote>
+    </div>
+    <p class="src">Patient comments as posted on the practice's previous website, shortened.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="v-h">
+  <div class="wrap">
+    <div class="visit-card">
+      <div class="visit-info">
+        <h2 id="v-h">Come see us on Deerbrook.</h2>
+        <a class="big-phone num" href="tel:+18659664035">(865) 966-4035</a>
+        <table aria-label="Office hours"><tbody id="hours">
+          <tr data-d="1"><td>Monday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr data-d="5"><td>Friday – Sunday</td><td>Closed</td></tr>
+        </tbody></table>
+        <p>10642 Deerbrook Dr, Knoxville, TN 37922<br>After hours, the answering service picks up 24 hours a day.</p>
+        <div class="cta">
+          <a class="btn btn-s" href="https://www.google.com/maps/dir/?api=1&destination=Knoxville+Cosmetic+Dentistry,+10642+Deerbrook+Dr,+Knoxville,+TN+37922" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Directions</a>
+          <a class="btn btn-l" href="https://www.facebook.com/knoxcosmeticdentistry/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <iframe title="Map to 10642 Deerbrook Dr, Knoxville" loading="lazy" src="https://www.google.com/maps?q=10642+Deerbrook+Dr,+Knoxville,+TN+37922&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© Knoxville Cosmetic Dentistry · Dr. Harold Silber, DDS</span><span>Preview by <a href="mailto:dobsdesign.online@gmail.com">Dobs Design</a></span></div></footer>
+
+<div class="dock">
+  <a class="btn btn-o" href="tel:+18659664035"><svg><use href="#phone"/></svg>Call</a>
+  <a class="btn btn-s" href="https://www.google.com/maps/dir/?api=1&destination=Knoxville+Cosmetic+Dentistry,+10642+Deerbrook+Dr,+Knoxville,+TN+37922" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Directions</a>
+</div>
+
+<script>
+// today's hours, Knoxville time
+(function(){
+  var w=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short'}).format(new Date());
+  var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(w);
+  var row=document.querySelector('#hours tr[data-d="'+(d>=1&&d<=4?d:5)+'"]');if(row)row.classList.add('today');
+})();
+// insurance check (list from the practice's previous website)
+(function(){
+  var plans=["Delta Dental","Aetna","Blue Cross Blue Shield","Dentemax","MetLife","Cigna","United Health Care","United Concordia","Guardian","Principal","Humana","Best Life","UMR","Anthem","Central United Life","Ameritas","Lincoln","Team Care","UNUM","Mail Administrator","Renaissance","Simple","90 Degree","Companion Life","Assurant","Always Care","Aflac","Caprock","Careington","Coresource","GEHA","Healthscope","MHBP","Mutual of Omaha","North America Admin","Southland Benefit Solutions","Superior Dental Care","TruAssure","Trustmark","Manhattan Life Assurance","MCA Administrators","Premera"];
+  var alias={"bcbs":"Blue Cross Blue Shield","blue cross":"Blue Cross Blue Shield","uhc":"United Health Care","unitedhealthcare":"United Health Care","met life":"MetLife","delta":"Delta Dental"};
+  var input=document.getElementById('plan'),out=document.getElementById('answer');
+  var norm=function(s){return s.toLowerCase().replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim()};
+  function run(){
+    var q=norm(input.value);
+    if(q.length<2){out.className='';out.textContent='Type a plan name and the answer shows here.';return}
+    if(/\bhmo\b/.test(q)){out.className='no';out.innerHTML='<b>HMO plans aren\'t in network.</b>Call and ask about paying out of network or CareCredit.';return}
+    var hit=alias[q]||plans.find(function(p){var n=norm(p);return n.indexOf(q)===0||n.split(' ').some(function(w){return w.length>2&&w.indexOf(q)===0})||n.replace(/ /g,'')===q.replace(/ /g,'')});
+    if(hit){out.className='yes';out.innerHTML='<b>Yes, '+hit+' is in network.</b>Call <a href="tel:+18659664035">(865) 966-4035</a> to confirm your specific plan and book.';}
+    else{out.className='no';out.innerHTML='<b>Not on our list, but call anyway.</b>The office will check your plan and explain your options, including CareCredit.';}
+  }
+  input.addEventListener('input',run);
+  document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){input.value=b.textContent;run();})});
+})();
+</script>
 </body>
 </html>
