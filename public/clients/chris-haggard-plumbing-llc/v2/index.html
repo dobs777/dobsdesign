@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chris Haggard Plumbing · Plumbing &amp; underground utilities, Knoxville TN</title>
+<meta name="description" content="Family plumbing and underground utility contractor in Strawberry Plains, serving the Knoxville area since 1998. Call (865) 933-6057.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#066bba; --blue-l:#0887eb; --blue-d:#044f88;
+  --ink:#1f2328; --muted:#4d555e; --white:#fff;
+  --concrete:#ecebe7; --concrete-2:#dedcd6; --rule:#d2d0c9;
+  --vis:#dcf23b; --vis-d:#b9cf12;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,sans-serif;
+  --wrap:min(1200px, 100% - 32px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --lift:0 18px 34px -18px rgba(31,35,40,.38);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scrollbar-color:var(--blue) var(--concrete)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--concrete)}
+::-webkit-scrollbar-thumb{background:var(--blue);border:3px solid var(--concrete);border-radius:6px}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+::selection{background:var(--vis);color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue-l);outline-offset:3px;border-radius:3px}
+.on-blue :focus-visible{outline-color:var(--vis)}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.2em}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(36px,5.2vw,60px);text-transform:uppercase}
+p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* preview bar + pill */
+.preview{background:var(--ink);color:#d9dde2;font:500 13px/1.4 var(--body);text-align:center;padding:8px 16px}
+.preview a{color:#fff}
+.pill{position:fixed;right:12px;bottom:12px;z-index:60;pointer-events:none;opacity:.7;background:var(--blue-d);color:#fff;font:600 13px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:8px;font:700 19px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:transform .2s var(--ease),background-color .2s var(--ease),box-shadow .3s var(--ease);cursor:pointer}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-vis{background:var(--vis);color:var(--ink)}
+.btn-vis:hover{background:#e8fb5c}
+.btn-line{border-color:currentColor;color:var(--blue-d);background:transparent}
+.btn-line:hover{background:rgba(6,107,186,.07)}
+.on-blue .btn-line{color:#fff}
+.on-blue .btn-line:hover{background:rgba(255,255,255,.1)}
+
+/* header */
+.head{position:relative;z-index:5;background:#fff;border-bottom:1px solid var(--rule)}
+.head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{display:block;font:700 22px/0.95 var(--display);letter-spacing:.03em;color:var(--ink);text-transform:uppercase}
+.brand small{display:block;font:600 12px/1.2 var(--body);color:var(--muted);letter-spacing:.04em;margin-top:3px}
+.nav{display:flex;gap:22px;font:600 15px/1 var(--body)}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--blue)}
+.head .btn{min-height:46px;padding:0 18px;font-size:18px}
+
+/* hero */
+.hero{background:var(--concrete);padding:28px 0 56px}
+.board{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(7,86px);gap:12px}
+.tile{position:relative;margin:0;overflow:hidden;border-radius:6px;background:var(--concrete-2)}
+.tile img{width:100%;height:100%;object-fit:cover}
+.tile figcaption{position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--ink);font:700 13px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:4px}
+.t1{grid-column:6/10;grid-row:1/4}
+.t2{grid-column:10/13;grid-row:1/5}
+.t3{grid-column:6/10;grid-row:4/8}
+.t4{grid-column:10/13;grid-row:5/8}
+.t1 img{object-position:50% 40%}
+.t2 img{object-position:50% 55%}
+.t4 img{object-position:60% 50%}
+.panel{grid-column:1/7;grid-row:1/8;position:relative;z-index:2;align-self:center;background:#fff;border-radius:8px;padding:38px 40px 34px;box-shadow:0 30px 60px -30px rgba(31,35,40,.45);border-top:6px solid var(--blue)}
+.panel h1{font-size:clamp(40px,5.4vw,66px);text-transform:uppercase;color:var(--ink)}
+.panel h1 span{color:var(--blue)}
+.quote-line{margin-top:16px;font:500 19px/1.4 var(--body);color:var(--muted)}
+.quote-line q{color:var(--ink);font-weight:600}
+.phone-big{display:block;margin-top:22px;font:700 clamp(44px,5.4vw,62px)/1 var(--display);color:var(--blue);text-decoration:none;letter-spacing:.01em}
+.phone-big:hover{color:var(--blue-d)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.emerg{display:flex;align-items:flex-start;gap:12px;margin-top:20px;padding:12px 14px;border-radius:6px;background:var(--ink);color:#fff;font:500 16px/1.4 var(--body)}
+.emerg i{flex:none;width:12px;height:12px;margin-top:5px;border-radius:50%;background:var(--vis);box-shadow:0 0 0 4px rgba(220,242,59,.22)}
+.emerg b{color:var(--vis);font-weight:700}
+
+/* measuring tape */
+.tape-wrap{display:flex;align-items:center;gap:14px;margin-top:22px}
+.tape-wrap .since{font:700 15px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tape-wrap .since strong{display:block;font-size:34px;color:var(--ink);letter-spacing:.02em;margin-top:2px;font-variant-numeric:tabular-nums}
+.tape{position:relative;flex:1;min-width:0;height:38px;overflow:hidden;border-radius:4px;background:var(--vis);box-shadow:inset 0 -2px 0 rgba(0,0,0,.08)}
+.tape-track{position:absolute;inset:0 0 0 -320px;
+  background:
+    repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 80px) 0 0/100% 22px no-repeat,
+    repeating-linear-gradient(90deg,var(--ink) 0 1.5px,transparent 1.5px 40px) 0 0/100% 15px no-repeat,
+    repeating-linear-gradient(90deg,rgba(31,35,40,.75) 0 1px,transparent 1px 10px) 0 0/100% 9px no-repeat}
+.tape-mark{position:absolute;top:0;bottom:0;right:22%;width:2px;background:#d12a1f}
+.tape-mark::after{content:"";position:absolute;bottom:0;left:-5px;border:6px solid transparent;border-bottom-color:#d12a1f}
+
+/* section rhythm */
+section{padding:88px 0}
+.lede{margin-top:16px;max-width:60ch;font-size:19px;color:var(--muted)}
+
+/* emergency band */
+.band{background:var(--blue);color:#fff;padding:0}
+.band .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;padding:48px 0}
+.band h2{font-size:clamp(32px,4.4vw,52px)}
+.band p{margin-top:12px;font-size:19px;color:#e2efff;max-width:52ch}
+.band .side{display:grid;gap:12px;justify-items:start}
+.band .hours{font:600 16px/1.5 var(--body);color:#e2efff}
+.band .hours b{color:#fff}
+.stripe{height:10px;background:repeating-linear-gradient(-45deg,var(--vis) 0 14px,var(--ink) 14px 28px)}
+
+/* audiences */
+.who{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;margin-top:40px}
+.home,.site{border-radius:8px;overflow:hidden}
+.home{background:var(--concrete);padding:36px}
+.site{background:var(--blue-d);color:#fff}
+.site img{width:100%;height:190px;object-fit:cover}
+.site .in{padding:30px 36px 36px}
+.who h3{font-size:34px;text-transform:uppercase}
+.who .sub{margin-top:8px;color:var(--muted)}
+.site .sub{color:#cfe3f7}
+.list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:0}
+.list li{padding:11px 0;border-top:1px solid var(--rule);font-weight:500}
+.list li:last-child{border-bottom:1px solid var(--rule)}
+.site .list li{border-color:rgba(255,255,255,.18)}
+.cols2{columns:2;column-gap:28px}
+.cols2 li{break-inside:avoid}
+.pump{display:flex;gap:16px;align-items:center;margin-top:24px;padding:14px;background:#fff;border-radius:6px}
+.pump img{width:110px;height:auto;border-radius:4px}
+.pump p{font-size:15px;color:var(--muted)}
+.pump b{color:var(--ink)}
+.subhead{margin-top:26px;font:700 20px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--vis)}
+.home .btn,.site .btn{margin-top:26px}
+
+/* job board */
+.jobs{background:var(--concrete)}
+.jobs-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.grid-jobs{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:200px;gap:14px;margin-top:40px}
+.job{position:relative;margin:0;border-radius:8px;overflow:hidden;background:#fff;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.job:hover{transform:translateY(-4px);box-shadow:var(--lift)}
+.job>img{width:100%;height:100%;object-fit:cover}
+.job figcaption{position:absolute;left:12px;right:12px;bottom:12px;max-width:430px;background:#fff;border-radius:6px;padding:12px 14px;border-left:5px solid var(--blue)}
+.job figcaption b{display:block;font:700 19px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.job figcaption span{display:block;margin-top:5px;font-size:15px;line-height:1.4;color:var(--muted)}
+.j-a{grid-column:span 4;grid-row:span 2}
+.j-b{grid-column:span 2;grid-row:span 2}
+.j-c{grid-column:span 3;grid-row:span 2}
+.j-d{grid-column:span 3}
+.j-e{grid-column:span 3}
+.j-f,.j-g,.j-h{grid-column:span 2;grid-row:span 2}
+.j-i{grid-column:span 6}
+.j-a>img{object-position:50% 35%}
+.j-e>img{object-position:50% 62%}
+.j-g>img{object-position:50% 60%}
+.pair{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.pair div{position:relative;overflow:hidden}
+.pair img{width:100%;height:100%;object-fit:cover}
+.pair em{position:absolute;top:10px;left:10px;font:700 14px/1 var(--display);font-style:normal;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:4px;background:#fff;color:var(--ink)}
+.pair div+div em{background:var(--vis)}
+.pair div+div{border-left:4px solid #fff}
+.bore{background:#fff;display:flex;flex-direction:column}
+.bore svg{flex:1;width:100%;min-height:0}
+.bore figcaption{position:static;max-width:none;margin:0 12px 12px}
+
+/* trenchless */
+.spec{margin-top:36px;border-top:3px solid var(--ink)}
+.spec-row{display:grid;grid-template-columns:1.3fr 1fr 2fr;gap:20px;align-items:center;padding:18px 4px;border-bottom:1px solid var(--rule);transition:background-color .2s var(--ease)}
+.spec-row:hover{background:var(--concrete)}
+.spec-row b{font:700 24px/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.spec-row .size{font:700 22px/1 var(--display);color:var(--blue);font-variant-numeric:tabular-nums}
+.spec-row span{color:var(--muted);font-size:16px}
+.uses{margin-top:22px;color:var(--muted);max-width:70ch}
+
+/* reviews */
+.reviews{background:#fbfaf5}
+.score{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:20px}
+.score .big{font:700 72px/1 var(--display);color:var(--ink)}
+.stars{display:flex;gap:3px}
+.stars svg{width:26px;height:26px}
+.score small{display:block;color:var(--muted);font-weight:600}
+.wall{columns:3 300px;column-gap:18px;margin-top:40px}
+.rev{break-inside:avoid;margin:0 0 18px;background:#fff;border:1px solid #ebe8de;border-radius:10px;padding:24px 24px 20px;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.rev:hover{transform:translateY(-3px);box-shadow:var(--lift)}
+.rev blockquote{margin:0;font:500 19px/1.5 var(--body);color:var(--ink)}
+.rev.lg blockquote{font:700 clamp(26px,2.6vw,32px)/1.12 var(--display);text-transform:none;letter-spacing:.005em}
+.rev figcaption{margin-top:14px;font:700 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d)}
+.rev figcaption span{color:var(--muted);font-weight:600}
+mark.nm{background:linear-gradient(transparent 52%,var(--vis) 52% 92%,transparent 92%);color:inherit;padding:0 2px;font-weight:700}
+.rev.blue{background:var(--blue);border-color:var(--blue);color:#fff}
+.rev.blue blockquote{color:#fff}
+.rev.blue figcaption,.rev.blue figcaption span{color:#d8eafc}
+.rev.blue mark.nm{color:var(--ink);background:var(--vis);border-radius:2px}
+
+/* trust */
+.trust-photo{border-radius:8px;overflow:hidden;height:300px;margin-top:40px}
+.trust-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.trust-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;margin-top:40px;align-items:start}
+.family p{font-size:19px;color:var(--muted);margin-top:14px}
+.family p:first-child{margin-top:0}
+.family .pull{font:700 30px/1.15 var(--display);color:var(--ink)}
+.checks{list-style:none;margin:0;padding:0}
+.checks li{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--rule)}
+.checks li:last-child{border-bottom:1px solid var(--rule)}
+.checks svg{width:26px;height:26px;margin-top:1px}
+.checks b{display:block;font:700 21px/1.1 var(--display);letter-spacing:.02em;text-transform:uppercase}
+.checks span{font-size:15px;color:var(--muted)}
+.hire{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:48px;padding:24px 28px;border-radius:8px;background:var(--vis)}
+.hire b{font:700 30px/1 var(--display);text-transform:uppercase}
+.hire p{margin-top:6px;font-weight:500}
+.hire .btn{background:var(--ink);color:#fff}
+.hire .btn:hover{background:#000}
+
+/* area */
+.area{background:var(--concrete)}
+.area-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:32px;margin-top:36px;align-items:stretch}
+.card{background:#fff;border-radius:8px;padding:30px}
+.card dl{margin:0;display:grid;gap:16px}
+.card dt{font:700 14px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:4px 0 0;font-size:18px;font-weight:500}
+.card dd a{color:var(--blue);font-weight:700}
+.map{border-radius:8px;overflow:hidden;min-height:360px;background:var(--concrete-2)}
+.map iframe{display:block;width:100%;height:100%;min-height:360px;border:0}
+
+/* footer */
+.foot{background:var(--ink);color:#c6ccd3;padding:48px 0 40px}
+.foot .wrap{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.foot .brand b{color:#fff}
+.foot .brand small{color:#9aa3ad}
+.foot p{margin-top:12px;font-size:15px}
+.foot a{color:#fff}
+.foot .fine{width:100%;border-top:1px solid #353b42;padding-top:18px;font-size:13px;color:#8e97a1}
+
+/* sticky call bar */
+.callbar{display:none}
+
+/* signature motion: mosaic assembles, tape ticks once */
+@keyframes tileIn{from{opacity:0;transform:translate(var(--dx,0),var(--dy,0)) scale(.96);clip-path:inset(10% 10% 10% 10% round 6px)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0 round 6px)}}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes tape{from{transform:translateX(320px)}to{transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .tile{animation:tileIn .7s var(--ease) both;animation-delay:calc(var(--i) * 110ms + 80ms)}
+  .t1{--dx:-18px;--dy:-14px}.t2{--dx:18px;--dy:-18px}.t3{--dx:-14px;--dy:18px}.t4{--dx:18px;--dy:16px}
+  .panel{animation:panelIn .6s var(--ease) both}
+  .tape-track{animation:tape .7s cubic-bezier(.22,1,.36,1) .55s both}
+}
+
+@media (max-width:1020px){
+  .nav{display:none}
+  .board{grid-template-columns:repeat(4,1fr);grid-template-rows:110px 110px auto;gap:10px}
+  .t1{grid-column:1/2;grid-row:1/3}.t2{grid-column:2/3;grid-row:1/3}.t3{grid-column:3/5;grid-row:1/2}.t4{grid-column:3/5;grid-row:2/3}
+  .panel{grid-column:1/-1;grid-row:3;margin-top:-30px;margin-inline:10px}
+  .who,.trust-grid,.area-grid,.band .wrap{grid-template-columns:1fr}
+  .grid-jobs{grid-template-columns:repeat(2,1fr);grid-auto-rows:230px}
+  .j-a,.j-c,.j-i{grid-column:span 2;grid-row:span 2}
+  .j-b,.j-d,.j-e,.j-f,.j-g,.j-h{grid-column:span 1;grid-row:span 2}
+  .j-i{grid-row:span 1}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  section{padding:60px 0}
+  .preview{font-size:12px;padding:6px 12px}
+  .head .wrap{min-height:62px}
+  .brand svg{width:40px;height:40px}
+  .brand b{font-size:19px}
+  .brand small{display:none}
+  .head .btn{min-height:42px;padding:0 12px;font-size:16px}
+  .head .btn .t{display:none}
+  .hero{padding:12px 0 36px}
+  .board{grid-template-columns:repeat(4,1fr);grid-template-rows:62px 62px auto;gap:6px}
+  .tile figcaption{display:none}
+  .panel{margin-top:-16px;margin-inline:0;padding:22px 18px 20px}
+  .panel h1{font-size:36px}
+  .quote-line{font-size:16px;margin-top:10px}
+  .phone-big{font-size:44px;margin-top:14px}
+  .cta-row .btn{flex:1 1 100%}
+  .tape-wrap .since strong{font-size:28px}
+  .pill{bottom:76px;right:10px;font-size:11px;padding:6px 10px}
+  .home,.site .in{padding:24px 20px}
+  .cols2{columns:1}
+  .grid-jobs{grid-template-columns:1fr;grid-auto-rows:auto}
+  .job,.j-a,.j-b,.j-c,.j-d,.j-e,.j-f,.j-g,.j-h,.j-i{grid-column:1/-1;grid-row:auto}
+  .job>img{aspect-ratio:4/3;height:auto}
+  .j-c .pair{aspect-ratio:1/1;height:auto}
+  .job figcaption{position:static;max-width:none;margin:0;border-radius:0}
+  .bore svg{height:200px;flex:none}
+  .bore figcaption{margin:0}
+  .spec-row{grid-template-columns:1fr auto;gap:6px 16px}
+  .spec-row span{grid-column:1/-1}
+  .score .big{font-size:58px}
+  .rev{padding:20px}
+  .trust-photo{height:200px}
+  .hire{padding:20px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--rule);box-shadow:0 -8px 20px -12px rgba(31,35,40,.35)}
+  .callbar .btn{flex:1;min-height:50px;padding:0 10px;font-size:18px}
+  .callbar .btn-line{flex:0 0 auto}
+}
+</style>
+</head>
+<body>
+<div class="preview">Preview made by Henrique · <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> · (719) 769-1280 · not the official Chris Haggard Plumbing website yet</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 5.5h18v13H3zM3.5 6l8.5 7 8.5-7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 26 26"><rect width="26" height="26" rx="5" fill="#066bba"/><path d="M7 13.5l4 4 8-9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+  <symbol id="ch" viewBox="0 0 48 48"><rect width="48" height="48" rx="4" fill="#066bba"/><rect x="3" y="3" width="42" height="42" rx="2" fill="none" stroke="#fff" stroke-opacity=".35"/><text x="24" y="33.5" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="27" fill="#fff" letter-spacing="0.5">CH</text></symbol>
+</svg>
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Chris Haggard Plumbing, home">
+      <svg aria-hidden="true"><use href="#ch"/></svg>
+      <span><b>Chris Haggard<br>Plumbing</b><small>Advanced Plumbing Specialist</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#jobs">Job board</a>
+      <a href="#trenchless">Trenchless</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Hours &amp; area</a>
+    </nav>
+    <a class="btn btn-blue" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="t">(865) 933-6057</span><span class="sr">Call</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Chris Haggard Plumbing">
+  <div class="wrap board">
+    <div class="panel">
+      <h1>Father and three sons, <span>digging since 1998.</span></h1>
+      <p class="quote-line"><q>They do what they say they're going to do.</q> Thomas Rickert, Google review</p>
+      <a class="phone-big" href="tel:+18659336057">(865) 933-6057</a>
+      <div class="cta-row">
+        <a class="btn btn-blue" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call now</a>
+        <a class="btn btn-line" href="mailto:chaggard@comcast.net?subject=Estimate%20request&amp;body=Hi%20Chris%20Haggard%20Plumbing%2C%0D%0A%0D%0AI%27d%20like%20an%20estimate%20for%3A%20%0D%0AAddress%3A%20%0D%0ABest%20phone%20number%3A%20%0D%0A%0D%0AThank%20you"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email for an estimate</a>
+      </div>
+      <p class="emerg"><i aria-hidden="true"></i><span><b>Emergency?</b> On call after hours and on weekends. Office Mon–Fri, 7 am – 4 pm.</span></p>
+      <div class="tape-wrap">
+        <p class="since">Since<strong id="year">1998</strong></p>
+        <div class="tape" aria-hidden="true"><div class="tape-track"></div><div class="tape-mark"></div></div>
+      </div>
+    </div>
+    <figure class="tile t1" style="--i:0"><img src="../img/manhole-trench.jpg" alt="Two crew members joining green sewer pipe at the base of a new manhole riser in a shored trench" width="1280" height="960"><figcaption>Sewer main</figcaption></figure>
+    <figure class="tile t2" style="--i:1"><img src="../img/crew-trench.jpg" alt="Two workers in hard hats and Chris Haggard Plumbing vests digging to a pipe in a pit beside the street" width="900" height="1200"><figcaption>Line repair</figcaption></figure>
+    <figure class="tile t3" style="--i:2"><img src="../img/hydrant-flush.jpg" alt="Fire hydrant being flushed into an orange barrel at the curb, work truck behind" width="1280" height="1023"><figcaption>Hydrant service</figcaption></figure>
+    <figure class="tile t4" style="--i:3"><img src="../img/excavator-street.jpg" alt="CAT excavator digging a trench along a street with a service truck and cones behind" width="750" height="1000"><figcaption>Street trench</figcaption></figure>
+  </div>
+</section>
+
+<div class="stripe" aria-hidden="true"></div>
+<section class="band on-blue" aria-labelledby="em-h">
+  <div class="wrap">
+    <div>
+      <h2 id="em-h">Sewer backing up on a Saturday night?</h2>
+      <p>We're on call after hours and on weekends for emergency services. Call the same number, any time something can't wait: (865) 933-6057.</p>
+    </div>
+    <div class="side">
+      <a class="btn btn-vis" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (865) 933-6057</a>
+      <p class="hours"><b>Office:</b> Monday to Friday, 7:00 am – 4:00 pm<br><b>Emergencies:</b> on call after hours &amp; weekends</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" aria-labelledby="sv-h">
+  <div class="wrap">
+    <h2 id="sv-h">Your house or your jobsite</h2>
+    <p class="lede">The same crew fixes a leaking water heater on a Tuesday and sets a manhole on a commercial site on Wednesday. Tell us which one you've got.</p>
+    <div class="who">
+      <div class="home">
+        <h3>At home</h3>
+        <p class="sub">Homeowners around Knoxville, Strawberry Plains and Jefferson County.</p>
+        <ul class="list">
+          <li>Leaking toilets, pipes and fixtures</li>
+          <li>Water, gas and sewer line repairs</li>
+          <li>Water heater repair and replacement</li>
+          <li>Sewer and drain cleaning, hydro jetting</li>
+          <li>Sewer and water line repair without digging up your yard</li>
+        </ul>
+        <div class="pump">
+          <img src="../img/eone-pump.jpg" alt="EONE grinder pump station" width="450" height="300" loading="lazy">
+          <p><b>EONE grinder pumps.</b> Installation, repair, replacement and troubleshooting: the pump, the pump station and the discharge line.</p>
+        </div>
+        <a class="btn btn-blue" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call about your house</a>
+      </div>
+      <div class="site on-blue">
+        <img src="../img/excavator-site.jpg" alt="Two CAT excavators working on a construction site" width="1280" height="485" loading="lazy">
+        <div class="in">
+          <h3>On the jobsite</h3>
+          <p class="sub">Contractors, developers, municipalities and commercial owners: businesses, restaurants, medical facilities, schools and industrial buildings.</p>
+          <p class="subhead">Commercial plumbing</p>
+          <ul class="list">
+            <li>Repairs on pipes of all sizes</li>
+            <li>EONE grinder pump systems</li>
+            <li>Sewer lift stations of all sizes, installed, serviced and maintained</li>
+          </ul>
+          <p class="subhead">Underground utilities</p>
+          <ul class="list cols2">
+            <li>Main installations</li>
+            <li>Hot taps and service taps</li>
+            <li>Valve installations</li>
+            <li>Fire hydrant installation and service</li>
+            <li>Manhole installation and rehab</li>
+            <li>Sewer mains and laterals</li>
+            <li>Storm mains and structures</li>
+            <li>Roof leaders and area drains</li>
+            <li>Sediment boxes, water quality units</li>
+            <li>Gas piping: locate, repair, install</li>
+          </ul>
+          <a class="btn btn-vis" href="mailto:chaggard@comcast.net?subject=Bid%20request&amp;body=Hi%20Chris%20Haggard%20Plumbing%2C%0D%0A%0D%0AProject%3A%20%0D%0ALocation%3A%20%0D%0AScope%20of%20work%3A%20%0D%0ABest%20phone%20number%3A%20%0D%0A%0D%0AThank%20you"><svg aria-hidden="true"><use href="#i-mail"/></svg>Send us your project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="jobs" id="jobs" aria-labelledby="jb-h">
+  <div class="wrap">
+    <div class="jobs-head">
+      <div>
+        <h2 id="jb-h">The job board</h2>
+        <p class="lede">No stock photos here. Real jobs: mains, manholes, hydrants and trenches.</p>
+      </div>
+      <a class="btn btn-blue" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg>Get yours on the board</a>
+    </div>
+    <div class="grid-jobs">
+      <figure class="job j-a"><img src="../img/manhole-trench.jpg" alt="Looking down into a shored trench at a new manhole riser, two crew members connecting green sewer pipe" width="1280" height="960" loading="lazy"><figcaption><b>Sewer main · manhole install</b><span>A new manhole riser set on gravel in a shored trench, with the crew joining the green sewer pipe at its base.</span></figcaption></figure>
+      <figure class="job j-b"><img src="../img/crew-trench.jpg" alt="Two workers in hard hats and hi-vis vests in a hand-dug pit beside a street fence" width="900" height="1200" loading="lazy"><figcaption><b>Line repair</b><span>Two of the crew, hard hats and vests on, down to the pipe beside the street.</span></figcaption></figure>
+      <figure class="job j-c"><div class="pair"><div><img src="../img/manhole-before.jpg" alt="Manhole before rehab: crumbling brick walls and debris in standing water" width="557" height="700" loading="lazy"><em>Before</em></div><div><img src="../img/manhole-after.jpg" alt="The same manhole after rehab with smooth new lined walls" width="557" height="700" loading="lazy"><em>After</em></div></div><figcaption><b>Manhole rehab</b><span>The same manhole: crumbling brick and debris before, smooth new walls after.</span></figcaption></figure>
+      <figure class="job j-d"><img src="../img/hydrant-flush.jpg" alt="Fire hydrant flushing into an orange barrel at the curb" width="1280" height="1023" loading="lazy"><figcaption><b>Fire hydrant service</b><span>Flushing a hydrant at the curb, the flow caught in an orange barrel.</span></figcaption></figure>
+      <figure class="job j-e"><img src="../img/main-install-site.jpg" alt="New white pipe with blue fittings laid in a long gravel trench on a commercial building site" width="900" height="1200" loading="lazy"><figcaption><b>Main installation</b><span>New white pipe and blue fittings laid down a long trench on a commercial site.</span></figcaption></figure>
+      <figure class="job j-f"><img src="../img/crew-valve.jpg" alt="Crew working at a red valve in a gravel-bedded trench" width="961" height="1200" loading="lazy"><figcaption><b>Valve installation</b><span>Crew in the trench at a red valve, bedded in gravel.</span></figcaption></figure>
+      <figure class="job j-g"><img src="../img/excavator-street.jpg" alt="CAT excavator opening a trench along a road, service truck and cones behind" width="750" height="1000" loading="lazy"><figcaption><b>Underground utilities</b><span>The CAT opening a trench along the road, service truck and cones behind.</span></figcaption></figure>
+      <figure class="job j-h bore">
+        <svg viewBox="0 0 320 200" role="img" aria-label="Drawing: a bore path running under a road between two pits">
+          <rect width="320" height="200" fill="#ecebe7"/>
+          <rect y="54" width="320" height="146" fill="#c9a77f"/>
+          <rect y="54" width="320" height="10" fill="#8a6a45"/>
+          <rect x="96" y="40" width="128" height="16" fill="#4d555e"/>
+          <path d="M120 48h20M180 48h20" stroke="#dcf23b" stroke-width="3"/>
+          <rect x="16" y="54" width="34" height="34" fill="#ecebe7"/>
+          <rect x="270" y="54" width="34" height="34" fill="#ecebe7"/>
+          <path d="M33 86 C 80 160, 240 160, 287 86" fill="none" stroke="#066bba" stroke-width="6" stroke-linecap="round"/>
+          <path d="M33 86 C 80 160, 240 160, 287 86" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="4 8"/>
+          <circle cx="160" cy="139" r="5" fill="#dcf23b" stroke="#1f2328" stroke-width="1.5"/>
+          <text x="160" y="30" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="700" font-size="15" fill="#1f2328" letter-spacing="1">ROAD STAYS OPEN</text>
+        </svg>
+        <figcaption><b>Horizontal directional boring</b><span>A drawing, not a photo: the pipe goes under the road or the yard instead of through it.</span></figcaption>
+      </figure>
+      <figure class="job j-i"><img src="../img/culvert.jpg" alt="Looking through a large culvert pipe with water running" width="1280" height="855" loading="lazy"><figcaption><b>Storm mains &amp; culverts</b><span>Looking down a large culvert pipe, water running through.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="trenchless" aria-labelledby="tr-h">
+  <div class="wrap">
+    <h2 id="tr-h">Fix it without digging up your property</h2>
+    <p class="lede">When a trench isn't the answer, we repair the pipe from the inside or pull a new one through underground.</p>
+    <div class="spec">
+      <div class="spec-row"><b>Point repair (PipePatch)</b><p class="size">3" – 48"</p><span>A patch set inside the pipe right at the damaged spot.</span></div>
+      <div class="spec-row"><b>CIPP lining</b><p class="size">3" – 10"</p><span>Cured-in-place lining for mains and services.</span></div>
+      <div class="spec-row"><b>Pipe bursting</b><p class="size">¾" – 6"</p><span>The old pipe is split apart as a new one is pulled in, for mains and services.</span></div>
+      <div class="spec-row"><b>Horizontal directional boring</b><p class="size">Under roads &amp; yards</p><span>New pipe bored underneath what's in the way.</span></div>
+      <div class="spec-row"><b>Cementitious lining (spin casting)</b><p class="size">30" &amp; up</p><span>A new cement lining spun onto the inside of large pipe.</span></div>
+    </div>
+    <p class="uses">Used on storm and sanitary sewer pipelines, catch basins, junction boxes, manholes and culverts, plus erosion control.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" aria-labelledby="rv-h">
+  <div class="wrap">
+    <h2 id="rv-h">What the neighbors say</h2>
+    <div class="score">
+      <span class="big">4.6</span>
+      <span class="stars" aria-hidden="true">
+        <svg fill="#e3a008"><use href="#i-star"/></svg><svg fill="#e3a008"><use href="#i-star"/></svg><svg fill="#e3a008"><use href="#i-star"/></svg><svg fill="#e3a008"><use href="#i-star"/></svg><svg fill="#e3a008" opacity=".45"><use href="#i-star"/></svg>
+      </span>
+      <span><strong>4.6 out of 5 stars</strong><small>from 49 Google reviews</small></span>
+    </div>
+    <div class="wall">
+      <figure class="rev lg"><blockquote>"These guys saved my bacon."</blockquote><figcaption>Robert B. <span>· White Pine, TN</span></figcaption></figure>
+      <figure class="rev"><blockquote>"<mark class="nm">Mark</mark> and his guys were so helpful… had 3 others at my house and no one could help. They stayed and helped until they could fix it."</blockquote><figcaption>Ashly Sims</figcaption></figure>
+      <figure class="rev blue"><blockquote>"Each time we have worked with <mark class="nm">Tyler</mark> he has been professional… They work 24/7 when needed (We know from experience)."</blockquote><figcaption>J E <span>· commercial project, downtown Knoxville</span></figcaption></figure>
+      <figure class="rev"><blockquote>"I tried calling six plumbers and they could not get to our house for days… They picked up my call and said they would get here before the end of the day."</blockquote><figcaption>Robert B. <span>· White Pine, TN</span></figcaption></figure>
+      <figure class="rev"><blockquote>"<mark class="nm">Chris</mark> came out &amp; on his first trip diagnosed the issue and had KUB come to the house &amp; take a look with him… our plumbing was correctly connected to the city line for the first time since moving into our house."</blockquote><figcaption>The Martinez Family</figcaption></figure>
+      <figure class="rev lg"><blockquote>"This is a father-and-3-sons business."</blockquote><figcaption>Diane Edge <span>· "They repaired a broken sewer main in my yard."</span></figcaption></figure>
+      <figure class="rev"><blockquote>"I contacted Haggard Plumbing about 7:40am and the team arrived at my house for service about 8:30am… The team was very professional, neat, and orderly."</blockquote><figcaption>Narketta Mallory</figcaption></figure>
+      <figure class="rev"><blockquote>"After trying several different companies who estimated job at $1500 to $4500… <mark class="nm">Mark</mark> Haggard came out… and only charged around $350."</blockquote><figcaption>Doug Gray <span>· Jefferson City, TN</span></figcaption></figure>
+      <figure class="rev"><blockquote>"After tremendous flooding in Knoxville… crews saved the day on Churchwell Ave. They had the latest tech to look in the pipes… You CAN trust them."</blockquote><figcaption>Jim M</figcaption></figure>
+      <figure class="rev"><blockquote>"Great plumbing company they do what they say they're going to do… stuck to the price they quoted me."</blockquote><figcaption>Thomas Rickert</figcaption></figure>
+      <figure class="rev"><blockquote>"Noticed my water heater was leaking… They swung by my house and replaced it for me. Friendly and knowledgeable local business."</blockquote><figcaption>Arley Amundson</figcaption></figure>
+      <figure class="rev"><blockquote>"Guys spent the whole afternoon unclogging sewer that backed up into the basement."</blockquote><figcaption>Rodney Gordon</figcaption></figure>
+      <figure class="rev lg"><blockquote>"Awesome family-owned business! They go above and beyond."</blockquote><figcaption>AJ Moore</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="trust" aria-labelledby="ts-h">
+  <div class="wrap">
+    <h2 id="ts-h">A family crew you can let in the gate</h2>
+    <div class="trust-photo"><img src="../img/crew-pipe-trench.jpg" alt="A crew member in a trench beside black pipe and a blue fitting" width="900" height="1200" loading="lazy"></div>
+    <div class="trust-grid">
+      <div class="family">
+        <p class="pull">Plumbing specialists in Knoxville since 1998.</p>
+        <p>Chris Haggard Plumbing is a family business out of Strawberry Plains. In reviews you'll meet <mark class="nm">Chris</mark>, <mark class="nm">Mark</mark> and <mark class="nm">Tyler</mark>, the people who show up, dig in and stay until it's fixed.</p>
+        <p>Safety is our top priority, on your property and on every jobsite.</p>
+      </div>
+      <ul class="checks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>Licensed, bonded &amp; insured</b><span>Fully, for residential and commercial work.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>Certified drug-free workplace</b><span>A certified drug-free business.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>Background checked</b><span>Every employee passes a background check and a drug test.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>PHCC member</b><span>Plumbing-Heating-Cooling Contractors Association.</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><b>BBB accredited</b><span>Better Business Bureau accredited business.</span></div></li>
+      </ul>
+    </div>
+    <div class="hire">
+      <div><b>We're hiring</b><p>Want to work with a crew that does it right? Apply online.</p></div>
+      <a class="btn" href="https://www.chrishaggardplumbing.com/apply-now-updated">Apply now</a>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area" aria-labelledby="ar-h">
+  <div class="wrap">
+    <h2 id="ar-h">Hours &amp; service area</h2>
+    <p class="lede">Based in Strawberry Plains, working across Knoxville and East Tennessee.</p>
+    <div class="area-grid">
+      <div class="card">
+        <dl>
+          <div><dt>Phone</dt><dd><a href="tel:+18659336057">(865) 933-6057</a></dd></div>
+          <div><dt>Office hours</dt><dd>Monday – Friday, 7:00 am – 4:00 pm</dd></div>
+          <div><dt>Emergencies</dt><dd>On call after hours and on weekends. Please call (865) 933-6057.</dd></div>
+          <div><dt>Address</dt><dd>4749 Solomon Drive<br>Strawberry Plains, TN 37871</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:chaggard@comcast.net?subject=Estimate%20request&amp;body=Hi%20Chris%20Haggard%20Plumbing%2C%0D%0A%0D%0AI%27d%20like%20an%20estimate%20for%3A%20%0D%0AAddress%3A%20%0D%0ABest%20phone%20number%3A%20%0D%0A%0D%0AThank%20you">chaggard@comcast.net</a></dd></div>
+        </dl>
+      </div>
+      <div class="map"><iframe src="https://www.google.com/maps?output=embed&amp;q=4749+Solomon+Drive,+Strawberry+Plains,+TN+37871" title="Map: 4749 Solomon Drive, Strawberry Plains, TN" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><svg aria-hidden="true"><use href="#ch"/></svg><span><b>Chris Haggard<br>Plumbing, LLC</b><small>Advanced Plumbing Specialist</small></span></a>
+      <p>4749 Solomon Drive, Strawberry Plains, TN 37871</p>
+    </div>
+    <div>
+      <p><a href="tel:+18659336057">(865) 933-6057</a><br><a href="mailto:chaggard@comcast.net">chaggard@comcast.net</a></p>
+      <p>Mon–Fri 7 am – 4 pm · Emergencies on call after hours &amp; weekends</p>
+    </div>
+    <p class="fine">© Chris Haggard Plumbing, LLC · Licensed, bonded &amp; insured · PHCC member · BBB accredited</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-blue" href="tel:+18659336057"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (865) 933-6057</a>
+  <a class="btn btn-line" href="mailto:chaggard@comcast.net?subject=Estimate%20request" aria-label="Email for an estimate"><svg aria-hidden="true"><use href="#i-mail"/></svg></a>
+</div>
+<div class="pill" aria-hidden="true">Variant 2 · On the job</div>
+
+<script>
+// "since 1998" ticks up once, in step with the tape sliding (tape: .55s delay, .7s long)
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var el=document.getElementById('year'),y=1990;
+  el.textContent=y;
+  setTimeout(function step(){el.textContent=++y;if(y<1998)setTimeout(step,85)},560);
+})();
+</script>
+</body>
+</html>
