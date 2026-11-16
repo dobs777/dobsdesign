@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Chris Haggard Plumbing, LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --cor: #0c4a6e; --tinta: #1a1a1a; --suave: #5f5f5f; --fundo: #faf8f5; --cartao: #fff; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: Inter, system-ui, sans-serif; color: var(--tinta); background: var(--fundo); line-height: 1.55; }
+  a { color: inherit; }
+  .aviso { font-size: 13px; text-align: center; padding: 8px 16px; background: #111; color: #ddd; }
+  .hero { min-height: 82vh; display: grid; align-items: end; padding: 32px 20px 48px;
+          background: var(--cor) url('') center/cover; position: relative; color: #fff; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 20%, rgba(0,0,0,.75)); }
+  .hero > * { position: relative; max-width: 1040px; width: 100%; margin: 0 auto; }
+  .hero small { position: absolute; right: 12px; bottom: 8px; width: auto; font-size: 11px; opacity: .7; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(40px, 8vw, 76px); line-height: 1.05; }
+  h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(28px, 4vw, 40px); margin-bottom: 20px; }
+  .resumo { font-size: 19px; max-width: 560px; margin: 14px 0 24px; opacity: .92; }
+  .selo { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.14);
+          backdrop-filter: blur(6px); padding: 8px 14px; border-radius: 99px; font-weight: 500; margin-bottom: 18px; }
+  .selo b { color: #ffd54a; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px;
+         border-radius: 12px; font-weight: 600; text-decoration: none; font-size: 17px; }
+  .btn.cheio { background: var(--cor); color: #fff; }
+  .hero .btn.cheio { background: #fff; color: var(--tinta); }
+  .btn.vazio { border: 1.5px solid currentColor; }
+  section { max-width: 1040px; margin: 0 auto; padding: 72px 20px; }
+  .reviews { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .review { background: var(--cartao); border-radius: 16px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .estrelas { color: #e3a008; letter-spacing: 2px; margin-bottom: 10px; }
+  .review blockquote { font-size: 16px; }
+  .review figcaption { margin-top: 12px; color: var(--suave); font-size: 14px; }
+  .galeria { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .galeria img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 14px; display: block; }
+  .galeria figcaption { font-size: 11px; color: var(--suave); margin-top: 4px; }
+  .info { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .info ul { list-style: none; padding: 0; }
+  .info li { padding: 6px 0; border-bottom: 1px solid #ebe7e1; }
+  .info p { margin-bottom: 10px; }
+  iframe { width: 100%; height: 320px; border: 0; border-radius: 16px; }
+  footer { text-align: center; padding: 40px 20px 100px; color: var(--suave); font-size: 14px; }
+  .fixo { position: fixed; left: 16px; right: 16px; bottom: 16px; display: none; z-index: 5; }
+  @media (max-width: 700px) { .fixo { display: flex; } .fixo .btn { width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,.25); } }
+</style>
+</head>
+<body>
+<div class="aviso">Preview made by Henrique · dobsdesign.online@gmail.com · (719) 769-1280 · not the official website yet</div>
+
+<header class="hero">
+  <div>
+    <div class="selo"><b>★ 4.6</b> · 49 Google reviews</div>
+    <h1>Chris Haggard Plumbing, LLC</h1>
+    <p class="resumo">Fast, honest plumbing in Knoxville.</p>
+    <div class="botoes">
+      <a class="btn cheio" href="tel:+1865-933-6057">Call a plumber</a>
+      <a class="btn vazio" href="#onde">Get directions</a>
+    </div>
+  </div>
+  <small></small>
+</header>
+
+<section>
+  <h2>What customers say</h2>
+  <div class="reviews"></div>
+  <p style="margin-top:20px"><a href="https://www.google.com/maps/place/Chris+Haggard+Plumbing,+LLC/data=!4m7!3m6!1s0x885c0bc682a7aa03:0xc2457677e5efe333!8m2!3d36.024614!4d-83.648756!16s%2Fg%2F1tm2bd6x!19sChIJA6qngsYLXIgRM-Pv5Xd2RcI">See all 49 reviews on Google</a></p>
+</section>
+
+<section>
+  <div class="galeria"></div>
+</section>
+
+<section id="onde">
+  <h2>Find us</h2>
+  <div class="info">
+    <div>
+      <p></p>
+      <p><a href="tel:(865) 933-6057">(865) 933-6057</a></p>
+      <ul><li>Monday: 7:00 AM – 5:00 PM</li><li>Tuesday: 7:00 AM – 5:00 PM</li><li>Wednesday: 7:00 AM – 5:00 PM</li><li>Thursday: 7:00 AM – 5:00 PM</li><li>Friday: 7:00 AM – 5:00 PM</li><li>Saturday: 7:00 AM – 5:00 PM</li><li>Sunday: Closed</li></ul>
+    </div>
+    <iframe src="https://www.google.com/maps?output=embed&amp;q=Chris%20Haggard%20Plumbing%2C%20LLC%2C%20" loading="lazy" title="Map"></iframe>
+  </div>
+</section>
+
+<footer>Chris Haggard Plumbing, LLC · </footer>
+<div class="fixo"><a class="btn cheio" href="tel:+1865-933-6057">Call a plumber</a></div>
+</body>
+</html>
