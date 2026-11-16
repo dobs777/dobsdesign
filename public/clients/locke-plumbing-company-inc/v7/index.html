@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locke Plumbing · Parts &amp; fixtures in Knoxville</title>
+<meta name="description" content="Repair parts and fixtures from 300+ brands. Pick up at 754 N Broadway, Knoxville, or ship anywhere in the US.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1b2a5e; --navy-2:#111c44; --ink:#141829; --text:#2c3248; --muted:#566079;
+  --sky:#eaf3fb; --sky-2:#d3e5f5; --line:#c9dbec; --white:#fff; --paper:#f4f9fe;
+  --red:#c8232c; --red-2:#a3161e; --sun:#ffd54a; --sun-2:#f2c22a;
+  --display:"Bricolage Grotesque", "Figtree", sans-serif;
+  --body:"Figtree", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+  --wrap:min(1200px, 100% - 32px);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:var(--navy) var(--sky)}
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{background:var(--sky)}
+::-webkit-scrollbar-thumb{background:var(--navy);border-radius:8px;border:3px solid var(--sky)}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+::selection{background:var(--sun);color:var(--ink)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+input{caret-color:var(--red)}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1.5px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.num{font-variant-numeric:tabular-nums}
+.mono{font-family:var(--mono);font-weight:500;letter-spacing:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1;letter-spacing:-.025em;text-wrap:balance;color:var(--navy)}
+h2{font-size:clamp(36px,5vw,62px);font-weight:800}
+.lede{font-size:19px;color:var(--text);max-width:56ch;margin:18px 0 0}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.preview{background:var(--navy-2);color:#cdd5ee;font-size:13px;text-align:center;padding:7px 16px;line-height:1.5}
+.preview a{color:#fff}
+.pill{position:fixed;right:14px;bottom:14px;z-index:50;background:var(--ink);color:#fff;font:600 12px/1 var(--body);padding:9px 13px;border-radius:999px;opacity:.72;pointer-events:none}
+
+/* header */
+header{background:var(--white);position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:52px;height:38px;flex:none}
+.brand b{font:800 23px/1 var(--display);color:var(--navy);letter-spacing:-.02em;display:block}
+.brand small{font:500 13px/1.2 var(--body);color:var(--muted)}
+nav{display:flex;gap:24px;margin-left:auto;font-weight:600;font-size:15px}
+nav a{text-decoration:none;color:var(--text);padding:6px 0;background:linear-gradient(var(--red),var(--red)) 0 100%/0 2px no-repeat;transition:background-size .3s var(--ease)}
+nav a:hover{background-size:100% 2px;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 16px/1 var(--body);text-decoration:none;padding:15px 22px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-2)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-ghost{color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--sun)}
+
+/* hero */
+.hero{background:var(--sky);padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:56px;align-items:center}
+h1{font-size:clamp(42px,5.6vw,78px);font-weight:800;letter-spacing:-.035em}
+h1 span{color:var(--red)}
+.search{display:flex;align-items:center;gap:6px;background:#fff;border:2px solid var(--navy);border-radius:999px;padding:6px;margin-top:30px;max-width:580px}
+.search:focus-within{box-shadow:0 0 0 5px rgba(200,35,44,.18)}
+.search svg.i{margin-left:14px;color:var(--navy)}
+.search input{flex:1;min-width:0;border:0;background:transparent;font:500 17px var(--body);padding:12px 8px;color:var(--ink)}
+.search input::placeholder{color:#5f6884}
+.search input:focus{outline:none}
+.search .btn{padding:13px 22px}
+.hint{font-size:15px;color:var(--muted);margin:14px 0 0}
+.hint a{color:var(--navy);font-weight:600}
+.rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:15px;color:var(--text);background:#fff;padding:8px 14px 8px 10px;border-radius:999px}
+.stars{display:flex;gap:2px;color:#e0a514}
+.stars svg{width:16px;height:16px;fill:currentColor}
+
+/* the drafting card */
+.draft{margin:0;background-color:var(--paper);background-image:linear-gradient(rgba(27,42,94,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(27,42,94,.07) 1px,transparent 1px);background-size:24px 24px;border:1.5px solid var(--line);border-radius:22px;padding:18px 18px 0;box-shadow:0 30px 60px -34px rgba(17,28,68,.45);overflow:hidden}
+.draft svg{width:100%;height:auto;display:block;max-height:560px}
+.draft figcaption{display:flex;gap:12px;align-items:center;margin:4px -18px 0;padding:14px 18px;background:#fff;border-top:1.5px solid var(--line);font-size:15px;color:var(--text)}
+.draft figcaption svg.i{color:var(--red);width:22px;height:22px}
+.ln{fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;transition:stroke .25s}
+.ln-thin{fill:none;stroke:var(--navy);stroke-width:1;opacity:.45;vector-effect:non-scaling-stroke}
+.fill{fill:#fff;transition:fill .25s}
+.axis{stroke:var(--navy);stroke-width:1;stroke-dasharray:16 5 3 5;opacity:.3;vector-effect:non-scaling-stroke}
+.lead{stroke:var(--navy);stroke-width:1;opacity:.55;vector-effect:non-scaling-stroke}
+.dot{fill:var(--red)}
+.lab{font:500 18px var(--mono);fill:var(--navy);transition:fill .25s}
+.pt{cursor:default;outline:none;transition:opacity .3s var(--ease)}
+.pt:hover .ln,.pt:focus .ln{stroke:var(--red)}
+.pt:hover .fill,.pt:focus .fill{fill:#fff1bf}
+.pt:hover .lab,.pt:focus .lab{fill:var(--red)}
+.pt:focus .lab{text-decoration:underline}
+.draft svg:has(.pt:hover) .pt:not(:hover),.draft svg:has(.pt:focus) .pt:not(:focus){opacity:.4}
+@media (prefers-reduced-motion:no-preference){
+  .x{animation:explode 1.1s var(--ease) both;animation-delay:calc(.35s + var(--n) * 90ms)}
+  .lbl{animation:fadein .6s var(--ease) both;animation-delay:calc(.9s + var(--n) * 90ms)}
+}
+@keyframes explode{from{transform:translateY(var(--d))}}
+@keyframes fadein{from{opacity:0}}
+
+/* store band */
+.store{position:relative;margin:0}
+.store img{width:100%;height:clamp(300px,46vw,560px);object-fit:cover;object-position:50% 25%}
+.store figcaption{position:absolute;left:max(16px,calc((100% - 1200px)/2));bottom:24px;background:#fff;color:var(--navy);font:600 15px/1.3 var(--body);padding:12px 16px;border-radius:999px;display:flex;gap:8px;align-items:center;box-shadow:0 12px 26px -14px rgba(17,28,68,.5)}
+.store figcaption svg.i{width:18px;height:18px;color:var(--red)}
+
+section{padding:96px 0;scroll-margin-top:72px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.head .lede{margin-top:14px}
+
+/* sale cards */
+.sale{background:var(--sky)}
+.window{display:grid;grid-template-columns:repeat(3,1fr);gap:56px 28px}
+.item{position:relative;display:flex;flex-direction:column;text-decoration:none;background:var(--white);border-radius:18px;padding:20px 20px 24px;transition:transform .35s var(--ease),box-shadow .35s var(--ease);box-shadow:0 2px 0 var(--line)}
+.item:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(17,28,68,.4)}
+.item .pic{aspect-ratio:1/0.82;display:grid;place-items:center;padding:18px 70px 6px 6px}
+.item .pic img{max-height:100%;object-fit:contain}
+.item .who{font:700 14px/1 var(--body);color:var(--red);margin-top:6px}
+.item h3{font:600 17px/1.35 var(--body);letter-spacing:0;color:var(--ink);margin:6px 0 0}
+.item .spec{margin:10px 0 0;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.item .spec .mono{color:var(--navy);font-size:13px;background:var(--sky);padding:2px 7px;border-radius:5px}
+.item .go{margin-top:auto;padding-top:14px;font-weight:700;font-size:15px;color:var(--navy);display:inline-flex;align-items:center;gap:6px}
+.item .go svg.i{width:16px;height:16px;transition:transform .3s var(--ease)}
+.item:hover .go svg.i{transform:translateX(4px)}
+.tag{position:absolute;top:-22px;right:18px;width:112px;transform-origin:50% 14px;filter:drop-shadow(0 8px 10px rgba(17,28,68,.22))}
+.tag::before{content:"";position:absolute;left:50%;top:-18px;width:2px;height:30px;background:#7d8aa8;transform:translateX(-50%)}
+.tag-body{display:block;position:relative;background:var(--sun);clip-path:polygon(50% 0,100% 20%,100% 100%,0 100%,0 20%);border-radius:0 0 10px 10px;padding:30px 10px 14px;text-align:center;-webkit-mask:radial-gradient(circle at 50% 14px,transparent 5px,#000 5.5px);mask:radial-gradient(circle at 50% 14px,transparent 5px,#000 5.5px)}
+.tag .off{display:block;font:800 34px/.9 var(--display);color:var(--red);letter-spacing:-.04em}
+.tag .off small{display:block;font:700 13px/1.2 var(--body);letter-spacing:0;color:var(--red-2)}
+.tag .now{display:block;font:800 22px/1 var(--display);color:var(--ink);margin-top:10px;letter-spacing:-.02em}
+.tag s{display:block;font:500 13px/1.3 var(--body);color:#5d4a0a;margin-top:2px}
+.tag.swing{animation:swing 1.4s var(--ease) both}
+@keyframes swing{0%{transform:rotate(-22deg)}30%{transform:rotate(10deg)}55%{transform:rotate(-4deg)}75%{transform:rotate(1.5deg)}100%{transform:rotate(0)}}
+
+.more{margin-top:64px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:start}
+.more h3{font-size:30px;font-weight:700}
+.more p{color:var(--text);margin:12px 0 22px}
+.more ul{list-style:none;margin:0;padding:6px 22px;background:var(--white);border-radius:18px}
+.more li a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;padding:15px 0;text-decoration:none;border-bottom:1px dashed var(--line)}
+.more li:last-child a{border-bottom:0}
+.more li a:hover .n{color:var(--red)}
+.more .pn{grid-column:1/-1;font-size:13px;color:var(--navy)}
+.more .n{font-weight:600;transition:color .2s}
+.more .p{white-space:nowrap;text-align:right}
+.more .p s{color:var(--muted);font-size:14px;margin-right:8px}
+.more .p b{background:var(--sun);padding:2px 8px;border-radius:6px;font-weight:700}
+
+/* bring it in */
+.match{background:var(--red);color:#fff}
+.match .wrap{max-width:900px}
+.match h2{color:#fff;font-size:clamp(40px,6vw,72px)}
+.match p{font-size:19px;color:#ffe3e4;max-width:52ch;margin:18px 0 28px}
+.match .actions{display:flex;gap:12px;flex-wrap:wrap}
+.match .btn-line{color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.match .btn-line:hover{background:#fff;color:var(--red)}
+
+/* brands */
+.brands h2 span{color:var(--red)}
+.wall{display:flex;flex-wrap:wrap;gap:10px}
+.wall span{font:700 clamp(18px,2.1vw,26px)/1 var(--display);letter-spacing:-.02em;color:var(--navy);padding:14px 20px;border-radius:999px;background:var(--sky)}
+.wall span.old{background:var(--navy);color:#fff}
+.wall a{font:700 clamp(18px,2.1vw,26px)/1 var(--display);letter-spacing:-.02em;padding:14px 20px;border-radius:999px;background:var(--sun);color:var(--ink);text-decoration:none;transition:background .2s}
+.wall a:hover{background:var(--sun-2)}
+.legend{display:flex;gap:10px;align-items:center;margin-top:22px;font-size:15px;color:var(--muted)}
+.legend i{width:14px;height:14px;border-radius:50%;background:var(--navy);flex:none}
+
+/* heaters */
+.heater{background:var(--sky)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.heater .pic{background:#fff;border-radius:22px;padding:36px;display:grid;place-items:center;position:relative}
+.heater .pic img{max-height:400px}
+.heater .ask{position:absolute;left:20px;bottom:20px;background:var(--sun);font:700 15px/1 var(--body);padding:10px 14px;border-radius:999px}
+.sizes{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 32px}
+.sizes div{background:#fff;border-radius:16px;padding:16px 22px;min-width:180px}
+.sizes dt{font-size:15px;font-weight:600;color:var(--muted)}
+.sizes dd{margin:4px 0 0;font:800 32px/1 var(--display);color:var(--navy);letter-spacing:-.02em}
+
+/* guides */
+.guides ul{list-style:none;padding:0;margin:30px 0 0}
+.guides li+li{margin-top:12px}
+.guides li a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;border-radius:16px;background:var(--sky);text-decoration:none;font-weight:700;font-size:18px;transition:background .25s,color .25s}
+.guides li a:hover{background:var(--navy);color:#fff}
+.guides li a:hover .models{color:#c9d3f0}
+.guides .models{display:block;font:500 15px var(--body);color:var(--muted);margin-top:2px}
+.models-cloud{display:flex;flex-wrap:wrap;gap:8px;align-content:center;padding:28px;border-radius:22px;background-color:var(--paper);background-image:linear-gradient(rgba(27,42,94,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(27,42,94,.07) 1px,transparent 1px);background-size:24px 24px;border:1.5px solid var(--line)}
+.models-cloud span{font:500 15px var(--mono);padding:8px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--navy);background:#fff}
+
+/* ways */
+.ways{padding-top:24px}
+.ways ol{list-style:none;margin:0;padding:0;border-top:2px solid var(--navy)}
+.ways li{display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1.3fr);gap:28px;align-items:start;padding:30px 0;border-bottom:1px solid var(--line)}
+.ways .ic{width:56px;height:56px;border-radius:50%;background:var(--sky);display:grid;place-items:center;color:var(--red)}
+.ways .ic svg.i{width:26px;height:26px}
+.ways h3{font-size:clamp(28px,3vw,38px);font-weight:700}
+.ways p{margin:0;color:var(--text);font-size:18px}
+.ways p a{font-weight:600;color:var(--navy)}
+.note{margin-top:28px;display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--text);background:#fff7d6;padding:16px 20px;border-radius:14px}
+.note svg.i{color:var(--red-2);margin-top:2px}
+
+/* visit */
+.visit{background:var(--navy);color:#dfe5f6;padding-bottom:0}
+.visit h2{color:#fff;font-size:clamp(44px,7vw,96px)}
+.visit .lede{color:#c6cfea}
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);margin-top:48px;border-radius:24px 24px 0 0;overflow:hidden;background:#fff;color:var(--ink)}
+.map{min-height:480px;background:var(--sky-2)}
+.map iframe{display:block;width:100%;height:100%;min-height:480px;border:0}
+.card{padding:40px}
+.addr{font:700 28px/1.15 var(--display);color:var(--navy);letter-spacing:-.02em;margin:0}
+.open{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-weight:700;font-size:15px;padding:7px 12px;border-radius:999px;background:var(--sky);color:var(--navy)}
+.open i{width:9px;height:9px;border-radius:50%;background:#8a93ab}
+.open.is-open{background:#e3f4e6;color:#165b2a}
+.open.is-open i{background:#1f9a45}
+.open[hidden]{display:none}
+.hours{width:100%;border-collapse:collapse;margin:22px 0 28px;font-size:16px}
+.hours td{padding:12px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours .closed td{color:var(--muted)}
+.card .actions{display:flex;gap:10px;flex-wrap:wrap}
+.card small{display:block;margin-top:16px;color:var(--muted);font-size:14px}
+
+footer{background:var(--navy-2);color:#b8c2e3;font-size:14px;padding:36px 0 72px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#fff}
+
+/* gentle scroll-in, only once JS confirms it can reveal */
+.js .rise{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rise.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  nav{display:none}
+  header .btn{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .draft{max-width:620px}
+  .window{grid-template-columns:repeat(2,1fr)}
+  .split,.more{grid-template-columns:1fr;gap:40px}
+  .visit-grid{grid-template-columns:1fr}
+  .map,.map iframe{min-height:340px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  header .wrap{height:64px;gap:12px}
+  .brand svg{width:42px;height:31px}
+  .brand b{font-size:19px}
+  .brand small{display:none}
+  header .btn{padding:11px 16px;font-size:14px}
+  .hero{padding:40px 0 48px}
+  .search .btn span{display:none}
+  .search .btn{padding:13px 15px}
+  .search svg.i{margin-left:8px}
+  .draft{padding:10px 10px 0;border-radius:18px}
+  .draft figcaption{margin:4px -10px 0;padding:12px 14px;font-size:14px}
+  .store figcaption{bottom:14px;font-size:13px;padding:9px 13px}
+  section{padding:68px 0}
+  .window{grid-template-columns:1fr;gap:48px}
+  .lede,.match p{font-size:17px}
+  .ways li{grid-template-columns:48px minmax(0,1fr);gap:8px 18px}
+  .ways li p{grid-column:2}
+  .ways .ic{width:44px;height:44px}
+  .ways .ic svg.i{width:22px;height:22px}
+  .ways p{font-size:16px}
+  .card{padding:28px 20px}
+  .more ul{padding:4px 16px}
+  .more li a{grid-template-columns:1fr}
+  .more .p{text-align:left}
+  .models-cloud{padding:18px}
+  .heater .pic{padding:20px}
+  .visit-grid{border-radius:18px 18px 0 0}
+  .preview{font-size:12px}
+  .pill{bottom:10px;right:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="preview">Preview made by Henrique · <a href="mailto:dobsdesign.online@gmail.com">dobsdesign.online@gmail.com</a> · (719) 769-1280 · not the official Locke Plumbing website yet</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Locke Plumbing home">
+      <svg viewBox="0 0 54 40" aria-hidden="true"><ellipse cx="27" cy="20" rx="26" ry="19" fill="#1b2a5e"/><ellipse cx="27" cy="20" rx="22.5" ry="15.5" fill="none" stroke="#fff" stroke-width="1.4"/><path d="M12 17h30c0 6-4.5 9.5-11 9.5h-8C16.5 26.5 12 23 12 17z" fill="#fff"/><path d="M15 26.5l-1.6 3.2M39 26.5l1.6 3.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M14 17v-4.2a3 3 0 0 1 5.6-1.4" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><path d="M16 20.5h22" stroke="#c8232c" stroke-width="1.6"/></svg>
+      <span><b>Locke Plumbing</b><small>Parts &amp; fixtures on North Broadway</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#sale">On sale</a>
+      <a href="#brands">Brands</a>
+      <a href="#heaters">Water heaters</a>
+      <a href="#guides">Backflow parts</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+    <a class="btn btn-red" href="https://secure.lockeplumbing.com/" target="_blank" rel="noopener">Shop online</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Every little piece, <span>down to the O-ring.</span></h1>
+      <p class="lede">Cartridges, stems, seals and fixtures from more than 300 brands. Grab it at our counter in Knoxville, or we'll ship it anywhere in the US.</p>
+      <form class="search" role="search" onsubmit="event.preventDefault();var q=this.q.value.trim();if(q)window.open('https://www.google.com/search?q=site%3Alockeplumbing.com+'+encodeURIComponent(q),'_blank','noopener')">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <label for="q" class="sr">Search parts by part number or brand</label>
+        <input id="q" name="q" type="search" placeholder="Part number or brand, like RP19804" autocomplete="off">
+        <button class="btn btn-navy" type="submit"><span>Find my part</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span class="sr">Search</span></button>
+      </form>
+      <p class="hint">No part number? Email a photo of the old one to <a href="mailto:requests@lockeplumbing.com?subject=Help%20me%20find%20a%20part">requests@lockeplumbing.com</a>.</p>
+      <div class="rating"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span><span><b class="num">4.7</b> on Google · <b class="num">116</b> reviews</span></div>
+    </div>
+
+    <figure class="draft">
+      <svg viewBox="118 20 400 580" role="img" aria-labelledby="dwg-t">
+        <title id="dwg-t">Drawing of a single-lever faucet cartridge pulled apart: bonnet cap, retaining clip, stem, two O-rings, cartridge body and base seals</title>
+        <line class="axis" x1="190" y1="24" x2="190" y2="596"/>
+
+        <g class="x pt" tabindex="0" style="--d:212px;--n:0">
+          <path class="ln fill" d="M142 52v40a48 9 0 0 0 96 0V52"/>
+          <ellipse class="ln fill" cx="190" cy="52" rx="48" ry="9"/>
+          <ellipse class="ln-thin" cx="190" cy="52" rx="14" ry="3"/>
+          <path class="ln-thin" d="M154 59v38M166 61v39M178 62v39M190 62v39M202 62v39M214 61v39M226 59v38"/>
+          <g class="lbl"><circle class="dot" cx="238" cy="72" r="4"/><line class="lead" x1="242" y1="72" x2="336" y2="72"/><text class="lab" x="344" y="78">Bonnet cap</text></g>
+        </g>
+
+        <g class="x pt" tabindex="0" style="--d:178px;--n:1">
+          <path class="ln" d="M176 147.5A40 8 0 1 1 204 147.5"/>
+          <path class="ln-thin" d="M180 145.4A34 6.5 0 1 1 200 145.4"/>
+          <circle class="ln fill" cx="176" cy="147.5" r="3"/><circle class="ln fill" cx="204" cy="147.5" r="3"/>
+          <g class="lbl"><circle class="dot" cx="230" cy="140" r="4"/><line class="lead" x1="234" y1="140" x2="336" y2="140"/><text class="lab" x="344" y="146">Retaining clip</text></g>
+        </g>
+
+        <g class="x pt" tabindex="0" style="--d:96px;--n:2">
+          <rect class="ln fill" x="179" y="180" width="22" height="36" rx="2"/>
+          <path class="ln-thin" d="M184 182v32M190 182v32M196 182v32"/>
+          <rect class="ln fill" x="184" y="216" width="12" height="46"/>
+          <path class="ln fill" d="M160 268v12a30 6 0 0 0 60 0v-12"/>
+          <ellipse class="ln fill" cx="190" cy="268" rx="30" ry="6"/>
+          <g class="lbl"><circle class="dot" cx="201" cy="198" r="4"/><line class="lead" x1="205" y1="198" x2="336" y2="198"/><text class="lab" x="344" y="204">Stem</text></g>
+        </g>
+
+        <g class="x pt" tabindex="0" style="--d:42px;--n:3">
+          <ellipse class="ln" cx="190" cy="318" rx="44" ry="8"/><ellipse class="ln-thin" cx="190" cy="318" rx="38" ry="6.4"/>
+          <ellipse class="ln" cx="190" cy="342" rx="44" ry="8"/><ellipse class="ln-thin" cx="190" cy="342" rx="38" ry="6.4"/>
+          <g class="lbl"><line class="lead" x1="234" y1="318" x2="234" y2="342"/><line class="lead" x1="234" y1="330" x2="336" y2="330"/><circle class="dot" cx="234" cy="330" r="4"/><text class="lab" x="344" y="336">O-rings ×2</text></g>
+        </g>
+
+        <g class="pt" tabindex="0">
+          <path class="ln fill" d="M140 384v110a50 10 0 0 0 100 0V384"/>
+          <ellipse class="ln fill" cx="190" cy="384" rx="50" ry="10"/>
+          <ellipse class="ln-thin" cx="190" cy="384" rx="16" ry="3.4"/>
+          <path class="ln-thin" d="M140 410a50 10 0 0 0 100 0M140 472a50 10 0 0 0 100 0"/>
+          <rect class="ln" x="158" y="428" width="18" height="32" rx="6"/>
+          <rect class="ln" x="204" y="428" width="18" height="32" rx="6"/>
+          <g class="lbl" style="--n:4"><circle class="dot" cx="240" cy="444" r="4"/><line class="lead" x1="244" y1="444" x2="336" y2="444"/><text class="lab" x="344" y="450">Cartridge body</text></g>
+        </g>
+
+        <g class="x pt" tabindex="0" style="--d:-44px;--n:5">
+          <path class="ln fill" d="M155 548v14a12 4 0 0 0 24 0v-14"/><ellipse class="ln fill" cx="167" cy="548" rx="12" ry="4"/>
+          <path class="ln fill" d="M201 548v14a12 4 0 0 0 24 0v-14"/><ellipse class="ln fill" cx="213" cy="548" rx="12" ry="4"/>
+          <g class="lbl"><circle class="dot" cx="225" cy="556" r="4"/><line class="lead" x1="229" y1="556" x2="336" y2="556"/><text class="lab" x="344" y="562">Base seals</text></g>
+        </g>
+      </svg>
+      <figcaption><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Only one piece worn out? Bring the old one to the counter and we'll match it.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<figure class="store">
+  <img src="../loja.jpg" alt="The Locke Plumbing store at 754 N Broadway, Knoxville: grey block building, blue and white sign, trucks in the lot" width="1400" height="1186">
+  <figcaption><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>754 N Broadway · park right out front</figcaption>
+</figure>
+
+<section class="sale" id="sale">
+  <div class="wrap">
+    <div class="head">
+      <div><h2>Marked down this month</h2><p class="lede">Real stock with real markdowns. Tap a part to order it from the Locke online store.</p></div>
+      <a class="btn btn-ghost" href="https://secure.lockeplumbing.com/" target="_blank" rel="noopener">Every sale item</a>
+    </div>
+    <div class="window">
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Kitchen%20Faucets&amp;s=&amp;s2=Residential&amp;sku=DEL-21996LF-ORB&amp;r1=DEL-25996LF-OB&amp;r2=DEL-RP54870RB&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">49%<small>off</small></span><span class="now">$139.96</span><s>$271.95</s></span></span>
+        <div class="pic"><img src="../p/DEL-21996LF-ORB.jpg" alt="Delta Windemere kitchen faucet in oil rubbed bronze" loading="lazy"></div>
+        <span class="who">Delta</span><h3>Windemere kitchen faucet with spray</h3>
+        <p class="spec"><span class="mono">21996LF-ORB</span><span>Oil rubbed bronze</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Backflow%20Preventer%20Items&amp;s=%20&amp;s2=Wilkins%20Backflow%20Units&amp;sku=WIL-34-975XL2SAG&amp;r1=&amp;r2=&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">50%<small>off</small></span><span class="now">$959.96</span><s>$1,925.00</s></span></span>
+        <div class="pic"><img src="../p/WIL-34-975XL2SAG.jpg" alt="Wilkins 975XL2 backflow preventer" loading="lazy"></div>
+        <span class="who">Wilkins</span><h3>975XL2 backflow preventer with Y-strainer and air gap</h3>
+        <p class="spec"><span class="mono">34-975XL2SAG</span><span>¾″ · lead free</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Clearance%20Items&amp;s=&amp;s2=&amp;sku=DEL-25996LF-OB&amp;r1=&amp;r2=&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">62%<small>off</small></span><span class="now">$69.96</span><s>$186.00</s></span></span>
+        <div class="pic"><img src="../p/DEL-25996LF-OB.jpg" alt="Delta Windemere two-handle lavatory faucet" loading="lazy"></div>
+        <span class="who">Delta</span><h3>Windemere two-handle lavatory faucet with pop-up</h3>
+        <p class="spec"><span class="mono">25996LF-ORB</span><span>Oil rubbed bronze</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Kitchen%20Faucets&amp;s=&amp;s2=Residential&amp;sku=DEL-21996LF-SS&amp;r1=&amp;r2=&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">39%<small>off</small></span><span class="now">$129.96</span><s>$213.95</s></span></span>
+        <div class="pic"><img src="../p/DEL-21996LF-SS.jpg" alt="Delta Windemere kitchen faucet in stainless steel" loading="lazy"></div>
+        <span class="who">Delta</span><h3>Windemere kitchen faucet with spray</h3>
+        <p class="spec"><span class="mono">21996LF-SS</span><span>Stainless steel</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Sink%20Drains&amp;s=&amp;s2=Kitchen%20Drains&amp;sku=WOL-S-3471MB&amp;r1=&amp;r2=&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">28%<small>off</small></span><span class="now">$86.96</span><s>$120.00</s></span></span>
+        <div class="pic"><img src="../p/WOL-S-3471MB.jpg" alt="Wolverine Brass matte black basket strainer" loading="lazy"></div>
+        <span class="who">Wolverine Brass by Speakman</span><h3>Kitchen basket strainer</h3>
+        <p class="spec"><span class="mono">S-3471-MB</span><span>Matte black</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="item" href="https://secure.lockeplumbing.com/detail.asp?c=Kitchen%20Faucets&amp;s=&amp;s2=Residential&amp;sku=DEL-420LF&amp;r1=&amp;r2=&amp;r3=" target="_blank" rel="noopener">
+        <span class="tag"><span class="tag-body num"><span class="off">30%<small>off</small></span><span class="now">$169.96</span><s>$242.75</s></span></span>
+        <div class="pic"><img src="../p/DEL-420LF.jpg" alt="Delta 420LF single-lever kitchen faucet with side spray" loading="lazy"></div>
+        <span class="who">Delta</span><h3>Single-lever kitchen faucet with side spray</h3>
+        <p class="spec"><span class="mono">420LF</span><span>3 or 4 hole mount</span></p>
+        <span class="go">Order online<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+
+    <div class="more">
+      <div>
+        <h3>And the little parts, too</h3>
+        <p>Repair parts on the sale list right now. Tap one to look it up by part number in the online store.</p>
+        <a class="btn btn-red" href="https://secure.lockeplumbing.com/" target="_blank" rel="noopener">Open the online store</a>
+      </div>
+      <ul class="num rise">
+        <li><a href="https://www.google.com/search?q=site%3Alockeplumbing.com+RP19804" target="_blank" rel="noopener"><span class="pn mono">RP19804</span><span class="n">Delta single-lever pressure balance cartridge</span><span class="p"><s>$124.35</s><b>$49.96</b></span></a></li>
+        <li><a href="https://www.google.com/search?q=site%3Alockeplumbing.com+RP46074" target="_blank" rel="noopener"><span class="pn mono">RP46074</span><span class="n">Delta new-style pressure balance cartridge</span><span class="p"><s>$118.35</s><b>$59.96</b></span></a></li>
+        <li><a href="https://www.google.com/search?q=site%3Alockeplumbing.com+G05-0307" target="_blank" rel="noopener"><span class="pn mono">G05-0307 / G05-0308</span><span class="n">Speakman stems with seats, per pair</span><span class="p"><s>$132.00</s><b>$105.96</b></span></a></li>
+        <li><a href="https://www.google.com/search?q=site%3Alockeplumbing.com+940-021A0" target="_blank" rel="noopener"><span class="pn mono">940-021A0</span><span class="n">Price Pfister chrome plated lever assembly</span><span class="p"><s>$67.26</s><b>$53.80</b></span></a></li>
+        <li><a href="https://www.google.com/search?q=site%3Alockeplumbing.com+104421" target="_blank" rel="noopener"><span class="pn mono">104421</span><span class="n">Moen cartridge remover</span><span class="p"><s>$77.00</s><b>$63.50</b></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="match" aria-labelledby="match-h">
+  <div class="wrap">
+    <h2 id="match-h">Bring the old part in. We'll match it.</h2>
+    <p>Worn cartridge, mystery stem, a flapper from a toilet nobody makes anymore. Set it on the counter at 754 N Broadway and we'll find the one that fits. Out of town? Email us a photo instead.</p>
+    <div class="actions">
+      <a class="btn btn-white" href="https://www.google.com/maps/dir/?api=1&amp;destination=754+N+Broadway,+Knoxville,+TN+37917" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Directions to the counter</a>
+      <a class="btn btn-line" href="mailto:requests@lockeplumbing.com?subject=Can%20you%20match%20this%20part%3F&amp;body=Brand%20(if%20known)%3A%0APart%20or%20model%20number%3A%0A(Attach%20a%20photo%20of%20the%20old%20part)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>Email a photo</a>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="brands">
+  <div class="wrap">
+    <div class="head"><div><h2>Parts the big-box stores <span>stopped carrying.</span></h2><p class="lede">Over 300 brands, from the faucet you bought last year to the one that came with the house.</p></div></div>
+    <div class="wall rise">
+      <span>Delta</span><span>Moen</span><span>Kohler</span><span>American Standard</span><span class="old">Price Pfister</span><span>Sloan</span><span>Zurn</span><span>Watts</span><span>Wilkins</span><span>Woodford</span><span>Grundfos</span><span>Speakman</span><span class="old">Symmons</span><span>Chicago</span><span>T&amp;S Brass</span><span class="old">Gerber</span><span class="old">Eljer</span><span class="old">Crane</span><span class="old">Briggs</span><span>Elkay</span><span>Grohe</span><span>Toto</span><span>Fluidmaster</span><span class="old">Sayco</span><a href="https://secure.lockeplumbing.com/" target="_blank" rel="noopener">+ 280 more online</a>
+    </div>
+    <p class="legend"><i></i>Older brands: the ones hardest to find parts for elsewhere.</p>
+  </div>
+</section>
+
+<section class="heater" id="heaters">
+  <div class="wrap split">
+    <div class="pic"><img src="../p/LOC-WATERHEATER.jpg" alt="Reliance tank water heater" loading="lazy"><span class="ask">Price by email</span></div>
+    <div>
+      <h2>Tank water heaters, in stock in Knoxville</h2>
+      <p class="lede">Reliance and American electric and gas tank heaters: conventional, direct vent and power vent. Tell us what you're replacing and we'll email you a price.</p>
+      <dl class="sizes num">
+        <div><dt>Electric</dt><dd>2–80 gal</dd></div>
+        <div><dt>Natural gas</dt><dd>30–75 gal</dd></div>
+      </dl>
+      <a class="btn btn-red" href="mailto:requests@lockeplumbing.com?subject=Water%20heater%20price&amp;body=Size%20(gallons)%3A%0AElectric%20or%20gas%3A%0AConventional%2C%20direct%20vent%20or%20power%20vent%3A%0APickup%20or%20shipping%3A"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email me a water heater price</a>
+    </div>
+  </div>
+</section>
+
+<section class="guides" id="guides">
+  <div class="wrap split">
+    <div>
+      <h2>Rebuilding a backflow preventer?</h2>
+      <p class="lede">Find your model number, pick the size, and see every repair part we carry for it.</p>
+      <ul>
+        <li><a href="https://secure.lockeplumbing.com/guides/wilkins/wilkins.htm" target="_blank" rel="noopener"><span>Wilkins &amp; Watts repair parts guide<span class="models">975, 950, 375, 009, 909 and more</span></span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a href="https://secure.lockeplumbing.com/savings/" target="_blank" rel="noopener"><span>Water &amp; energy saving store<span class="models">Toilets, showers, faucets, leaks</span></span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="models-cloud rise" aria-label="Backflow models covered in the guide">
+      <span>310</span><span>350</span><span>350DA</span><span>375</span><span>375DA</span><span>420</span><span>450</span><span>450DA</span><span>475</span><span>475DA</span><span>475V</span><span>700</span><span>705</span><span>720A</span><span>750A</span><span>950</span><span>950DA</span><span>950XL</span><span>950XLT</span><span>975</span><span>975DA</span><span>975XL</span><span>009</span><span>909</span>
+    </div>
+  </div>
+</section>
+
+<section class="ways" id="order">
+  <div class="wrap">
+    <div class="head"><h2>Three ways to get your part</h2></div>
+    <ol>
+      <li>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6v10H3z"/><path d="M9 20v-6h6v6"/></svg></span>
+        <h3>Pick it up</h3>
+        <p>Come to the counter at 754 N Broadway, Monday to Friday, 8 am to 5 pm. Bring the old part along and we'll match it.</p>
+      </li>
+      <li>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg></span>
+        <h3>Have it shipped</h3>
+        <p>Order <a href="https://secure.lockeplumbing.com/" target="_blank" rel="noopener">online</a> any time, day or night. Most orders ship in 3 to 5 business days by FedEx, UPS or USPS, plus 1 to 4 days in transit.</p>
+      </li>
+      <li>
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <h3>Ask us first</h3>
+        <p>Not sure what you need? Email <a href="mailto:requests@lockeplumbing.com?subject=Part%20question">requests@lockeplumbing.com</a>. Already ordered? Write to <a href="mailto:orderstatus@lockeplumbing.com?subject=Order%20status">orderstatus@lockeplumbing.com</a>.</p>
+      </li>
+    </ol>
+    <p class="note"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg><span>We don't take orders over the phone. Special orders can't be cancelled, and returned warranty parts carry a 25% restocking fee. <a href="https://secure.lockeplumbing.com/policies.asp" target="_blank" rel="noopener">Shipping &amp; returns policy</a></span></p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <h2>Come see us on North Broadway</h2>
+    <p class="lede">Plenty of parking out front. Walk in with the broken part, walk out with the new one.</p>
+    <div class="visit-grid">
+      <div class="map"><iframe title="Map to Locke Plumbing, 754 N Broadway, Knoxville" loading="lazy" src="https://www.google.com/maps?output=embed&amp;q=Locke+Plumbing,+754+N+Broadway,+Knoxville,+TN+37917"></iframe></div>
+      <div class="card">
+        <p class="addr">754 N Broadway<br>Knoxville, TN 37917</p>
+        <span class="open" id="open" hidden><i></i><span></span></span>
+        <table class="hours num">
+          <tr><td>Monday – Friday</td><td>8:00 am – 5:00 pm</td></tr>
+          <tr class="closed"><td>Saturday &amp; Sunday</td><td>Closed</td></tr>
+          <tr><td>Online store</td><td>Open 24 hours</td></tr>
+        </table>
+        <div class="actions">
+          <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&amp;destination=754+N+Broadway,+Knoxville,+TN+37917" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ghost num" href="tel:+18655259317">(865) 525-9317</a>
+        </div>
+        <small>Call with questions. Orders are placed online or at the counter, not by phone.</small>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Locke Plumbing Company, Inc. · 754 N Broadway, Knoxville, TN 37917</span>
+    <span><a href="https://secure.lockeplumbing.com/policies.asp" target="_blank" rel="noopener">Shipping &amp; returns</a> · <a href="mailto:requests@lockeplumbing.com?subject=Question%20for%20Locke%20Plumbing">requests@lockeplumbing.com</a></span>
+  </div>
+</footer>
+
+<div class="pill">Variant 7 · Friendly blueprint</div>
+
+<script>
+// Tags hang still and groups sit in place by default; JS adds the one-time swing / rise when they scroll in.
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(e.target.classList.contains('tag')?'swing':'in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px'});
+  document.querySelectorAll('.tag').forEach(function(t,i){t.style.animationDelay=(i%3)*90+'ms';io.observe(t)});
+  document.querySelectorAll('.rise').forEach(function(r){io.observe(r)});
+}
+// Open/closed badge in Knoxville time (Eastern).
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+    var d=p.find(function(x){return x.type==='weekday'}).value, h=+p.find(function(x){return x.type==='hour'}).value%24;
+    var open=['Sat','Sun'].indexOf(d)<0 && h>=8 && h<17, el=document.getElementById('open');
+    el.querySelector('span').textContent=open?'Open now · until 5 pm':'Counter closed now · online store open';
+    if(open)el.classList.add('is-open');
+    el.hidden=false;
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
